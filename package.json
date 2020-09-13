@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Alexandrshy/keukenhof"
+    "url": "https://github.com/Alexandrshy/tiro"
   },
   "author": "Alex Shualev <alexandrshy@gmail.com>",
   "license": "MIT",
@@ -15,13 +15,25 @@
     "popup"
   ],
   "bugs": {
-    "url": "https://github.com/Alexandrshy/keukenhof/issues"
+    "url": "https://github.com/Alexandrshy/tiro/issues"
   },
-  "homepage": "https://github.com/Alexandrshy/keukenhof",
+  "homepage": "https://github.com/Alexandrshy/tiro",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,ts}": [
+      "yarn lint"
+    ]
+  },
   "scripts": {
     "start": "react-app-rewired start",
     "start:visualize": "BUNDLE_VISUALIZE=1 react-app-rewired start",
-    "build": "react-app-rewired build"
+    "build": "react-app-rewired build",
+    "lint": "eslint '*/**/*.{ts,tsx}'"
   },
   "dependencies": {
     "mobx": "^5.15.6",
@@ -32,11 +44,15 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-decorators": "^7.10.5",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
     "@types/react": "^16.9.49",
     "@types/react-dom": "^16.9.8",
     "autoprefixer": "^9.8.6",
     "customize-cra": "^1.0.0",
     "eslint": "^6.6.0",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.3.0",
     "normalize.css": "^8.0.1",
     "react-app-rewired": "^2.1.6",
     "ts-loader": "^8.0.3",
