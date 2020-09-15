@@ -9,10 +9,15 @@
   "author": "Alex Shualev <alexandrshy@gmail.com>",
   "license": "MIT",
   "keywords": [
-    "javascript",
-    "modal",
-    "dialog",
-    "popup"
+    "preview",
+    "message",
+    "post",
+    "shot",
+    "dribbble",
+    "twitter",
+    "youtube",
+    "webapp",
+    "pet-project"
   ],
   "bugs": {
     "url": "https://github.com/Alexandrshy/tiro/issues"
