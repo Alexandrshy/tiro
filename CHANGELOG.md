@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/Alexandrshy/tiro/compare/v1.0.1...v1.0.2) (2020-09-18)
+
+
+### Bug Fixes
+
+* added sort plugin, fix eslint error, removed comment ([9425ec2](https://github.com/Alexandrshy/tiro/commit/9425ec23dae7e1a75807cd7ef0593c06fae5e487))
+
 ## [1.0.1](https://github.com/Alexandrshy/tiro/compare/v1.0.0...v1.0.1) (2020-09-18)
 
 
