@@ -1,4 +1,28 @@
 :root {
   --default-font-style: normal;
-  --default-font-family: Arial, sans-serif;
+  --default-font-family: "Poppins", Helvetica, sans-serif;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+
+  --white: #ffffff;
+  --woodsmoke: #171a21;
+  --woodsmoke-25: rgba(23, 26, 33, 0.25);
+  --black-squeeze: #f7fafc;
+  --black-squeeze-25: rgba(247, 250, 252, 0.25);
+  --dodger-blue: #1479ca;
+  --dodger-blue-25: rgba(20, 121, 202, 0.25);
+
+  --logo: var(--black-squeeze);
+  --bg-main: var(--woodsmoke);
+  --bg-header: var(--woodsmoke);
+  --bg-button-base: var(--dodger-blue);
+  --bg-button-base-focus: var(--dodger-blue-25);
+  --bg-button-base-color: var(--white);
+  --bg-button-white: var(--black-squeeze);
+  --bg-button-white-focus: var(--black-squeeze-25);
+  --bg-button-white-color: var(--woodsmoke);
+  --bg-button-dark: var(--woodsmoke);
+  --bg-button-dark-focus: var(--woodsmoke-25);
+  --bg-button-dark-color: var(--white);
 }
