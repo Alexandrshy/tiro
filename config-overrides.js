@@ -7,12 +7,17 @@ const {
   addPostcssPlugins,
   addWebpackAlias,
 } = require("customize-cra");
+const path = require("path");
 
 module.exports = override(
   addDecoratorsLegacy(),
   useEslintRc(),
   enableEslintTypescript(),
   addPostcssPlugins([require("autoprefixer")]),
-  process.env.BUNDLE_VISUALIZE == 1 && addBundleVisualizer(),
-  addWebpackAlias({})
+  process.env.BUNDLE_VISUALIZE === 1 && addBundleVisualizer(),
+  addWebpackAlias({
+    "@components": path.resolve(__dirname, "src/components"),
+    "@images": path.resolve(__dirname, "src/images"),
+    "@stores": path.resolve(__dirname, "src/stores"),
+  })
 );
