@@ -1,0 +1,13 @@
+.aside {
+  width: 350px;
+  padding: 3rem 2rem;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 3rem;
+}

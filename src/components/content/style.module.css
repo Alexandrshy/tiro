@@ -1,0 +1,13 @@
+.main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.temp {
+  background-color: #fff;
+  width: calc(100% - 350px);
+  height: 500px;
+  min-height: calc(100vh - 90px);
+  border-radius: 50px 0 0 0;
+}
