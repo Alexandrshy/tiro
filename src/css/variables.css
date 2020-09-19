@@ -6,23 +6,34 @@
   --font-weight-bold: 700;
 
   --white: #ffffff;
+  --silver-chalice: #a9a9a9;
   --woodsmoke: #171a21;
   --woodsmoke-25: rgba(23, 26, 33, 0.25);
   --black-squeeze: #f7fafc;
+  --foam: #eaf6fd;
   --black-squeeze-25: rgba(247, 250, 252, 0.25);
   --dodger-blue: #1479ca;
+  --curious-blue: #2789d8;
   --dodger-blue-25: rgba(20, 121, 202, 0.25);
+  --mine-shaft: #292929;
+  --mine-shaft-25: rgba(41, 41, 41, 0.25);
+  --shark: #262727;
 
   --logo: var(--black-squeeze);
+  --white-text: var(--black-squeeze);
+  --gray-text: var(--silver-chalice);
   --bg-main: var(--woodsmoke);
   --bg-header: var(--woodsmoke);
   --bg-button-base: var(--dodger-blue);
   --bg-button-base-focus: var(--dodger-blue-25);
+  --bg-button-base-hover: var(--curious-blue);
   --bg-button-base-color: var(--white);
   --bg-button-white: var(--black-squeeze);
   --bg-button-white-focus: var(--black-squeeze-25);
+  --bg-button-white-hover: var(--foam);
   --bg-button-white-color: var(--woodsmoke);
-  --bg-button-dark: var(--woodsmoke);
-  --bg-button-dark-focus: var(--woodsmoke-25);
+  --bg-button-dark: var(--mine-shaft);
+  --bg-button-dark-focus: var(--mine-shaft-25);
+  --bg-button-dark-hover: var(--shark);
   --bg-button-dark-color: var(--white);
 }
