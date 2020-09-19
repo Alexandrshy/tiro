@@ -1,0 +1,27 @@
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  margin-left: -1rem;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.icon {
+  width: 2.35rem;
+  height: 2.35rem;
+  transition: transform 0.5s;
+}
+
+@media (hover: hover) {
+  .logo:hover .icon {
+    transform: rotate(180deg);
+  }
+}
+
+.name {
+  margin-left: 10px;
+  font-weight: var(--font-weight-bold);
+  font-size: 1.65rem;
+  color: var(--logo);
+}

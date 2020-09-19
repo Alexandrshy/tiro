@@ -12,6 +12,7 @@
   border: 1px solid transparent;
   background-color: var(--bg-button-base);
   color: var(--bg-button-base-color);
+  transition: background-color 0.3s;
   cursor: pointer;
 }
 
@@ -43,4 +44,15 @@
 }
 
 @media (hover: hover) {
+  .button:hover {
+    background-color: var(--bg-button-base-hover);
+  }
+
+  .button-white:hover {
+    background-color: var(--bg-button-white-hover);
+  }
+
+  .button-dark:hover {
+    background-color: var(--bg-button-dark-hover);
+  }
 }
