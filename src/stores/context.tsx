@@ -1,7 +1,7 @@
-import React, { createContext, useContext, FC } from "react";
 import { useLocalStore } from "mobx-react";
+import React, { createContext, FC, useContext } from "react";
 
-import { PreviewStore, PreviewStoreType } from "./file-store";
+import { PreviewStore, PreviewStoreType } from "@stores/file-store";
 
 /**
  * Create a context
