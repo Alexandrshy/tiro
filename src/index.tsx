@@ -4,8 +4,9 @@ import { configure } from "mobx";
 import React from "react";
 import ReactDOM from "react-dom";
 
+import { StoreProvider } from "@stores/context";
+
 import App from "./App";
-import { StoreProvider } from "./stores/context";
 
 configure({ enforceActions: "observed" });
 
