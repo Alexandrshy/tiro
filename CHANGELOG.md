@@ -1,3 +1,12 @@
+## [1.0.3](https://github.com/Alexandrshy/tiro/compare/v1.0.2...v1.0.3) (2020-09-19)
+
+
+### Bug Fixes
+
+* added rules for alias ([f627761](https://github.com/Alexandrshy/tiro/commit/f627761e96cd23f58186b398462b39a9bc1901d5))
+* fixed import sort rules ([0d944c2](https://github.com/Alexandrshy/tiro/commit/0d944c269517a788aff9e05cc0649425cd7c5ba8))
+* fixed manifest ([e737efa](https://github.com/Alexandrshy/tiro/commit/e737efa12372c68008dcb2994a737480da84ae81))
+
 ## [1.0.2](https://github.com/Alexandrshy/tiro/compare/v1.0.1...v1.0.2) (2020-09-18)
 
 
