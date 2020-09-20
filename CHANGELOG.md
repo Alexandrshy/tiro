@@ -1,3 +1,11 @@
+## [1.0.5](https://github.com/Alexandrshy/tiro/compare/v1.0.4...v1.0.5) (2020-09-20)
+
+
+### Bug Fixes
+
+* added footer ([0001642](https://github.com/Alexandrshy/tiro/commit/0001642f5cfcb900804efcae22757d90ca36a95e))
+* small fix for footer link and styles ([ebc957d](https://github.com/Alexandrshy/tiro/commit/ebc957db7fb24f0b675676079286aa8a8971063e))
+
 ## [1.0.4](https://github.com/Alexandrshy/tiro/compare/v1.0.3...v1.0.4) (2020-09-19)
 
 
