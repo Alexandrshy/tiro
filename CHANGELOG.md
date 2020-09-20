@@ -1,3 +1,14 @@
+## [1.0.4](https://github.com/Alexandrshy/tiro/compare/v1.0.3...v1.0.4) (2020-09-19)
+
+
+### Bug Fixes
+
+* fixed css variables ([36139eb](https://github.com/Alexandrshy/tiro/commit/36139eb207893a20afa723291c242f3089ea760a))
+* fixed index imports ([ecd4c2a](https://github.com/Alexandrshy/tiro/commit/ecd4c2a77fd22e1eab7a5907ea8658ae80627f4d))
+* fixed stores ([a8531a7](https://github.com/Alexandrshy/tiro/commit/a8531a726558d07a243514978e2930536039a378))
+* init logo component, and add hover effect for buttons ([d941f1f](https://github.com/Alexandrshy/tiro/commit/d941f1f363e49b7c16828019e8272215d540f999))
+* init new components ([002e745](https://github.com/Alexandrshy/tiro/commit/002e745ce4687950d77c448a4c2a388c89ff7158))
+
 ## [1.0.3](https://github.com/Alexandrshy/tiro/compare/v1.0.2...v1.0.3) (2020-09-19)
 
 
