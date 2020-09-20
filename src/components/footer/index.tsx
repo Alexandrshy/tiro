@@ -34,7 +34,7 @@ export const Footer: React.FC = () => {
         <li className={style.item}>
           <a
             className={classNames(style.link, style.linkIcon, "link")}
-            href="https://github.com/Alexandrshy/tiro"
+            href="https://twitter.com/alexandrshy"
             rel="noopener noreferrer"
             target="_blank"
           >
