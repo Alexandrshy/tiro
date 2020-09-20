@@ -2,6 +2,7 @@ import React from "react";
 
 import { Upload } from "@components/aside/load";
 import { Title } from "@components/aside/title";
+import { Footer } from "@components/footer";
 
 import style from "./style.module.css";
 
@@ -20,6 +21,7 @@ export const Aside: React.FC = () => {
           <Title text="Canvas options" />
         </li>
       </ul>
+      <Footer />
     </aside>
   );
 };

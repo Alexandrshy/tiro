@@ -18,10 +18,12 @@
   --mine-shaft: #292929;
   --mine-shaft-25: rgba(41, 41, 41, 0.25);
   --shark: #262727;
+  --link-water: #eaf1f9;
 
   --logo: var(--black-squeeze);
   --white-text: var(--black-squeeze);
   --gray-text: var(--silver-chalice);
+  --blue-text: var(--curious-blue);
   --bg-main: var(--woodsmoke);
   --bg-header: var(--woodsmoke);
   --bg-button-base: var(--dodger-blue);
@@ -36,4 +38,6 @@
   --bg-button-dark-focus: var(--mine-shaft-25);
   --bg-button-dark-hover: var(--shark);
   --bg-button-dark-color: var(--white);
+  --bg-preview: var(--link-water);
+  --border-footer: var(--silver-chalice);
 }

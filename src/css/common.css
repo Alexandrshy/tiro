@@ -24,6 +24,22 @@ a {
   text-decoration: none;
 }
 
+.link {
+  color: var(--white-text);
+  transition: color 0.3s;
+}
+
+.link:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.125rem var(--bg-button-base-focus);
+}
+
+@media (hover: hover) {
+  .link:hover {
+    color: var(--blue-text);
+  }
+}
+
 ul {
   list-style: none outside none;
   padding-left: 0;
@@ -41,4 +57,8 @@ button {
 
 button {
   user-select: none;
+}
+
+img {
+  max-width: 100%;
 }
