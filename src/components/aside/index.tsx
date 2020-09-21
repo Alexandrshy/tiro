@@ -1,7 +1,7 @@
 import React from "react";
 
-import { Upload } from "@components/aside/load";
 import { Title } from "@components/aside/title";
+import { Upload } from "@components/control/load";
 import { Footer } from "@components/footer";
 
 import style from "./style.module.css";

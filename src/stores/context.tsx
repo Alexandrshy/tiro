@@ -2,20 +2,25 @@ import { useLocalStore } from "mobx-react";
 import React, { createContext, FC, useContext } from "react";
 
 import { PreviewStore, PreviewStoreType } from "@stores/file-store";
+import { PreviewScale, PreviewScaleType } from "@stores/scale";
 
 /**
  * Create a context
  */
-const StoreContext = createContext<{ previewStore: PreviewStoreType } | null>(
-  null
-);
+const StoreContext = createContext<{
+  previewStore: PreviewStoreType;
+  previewScale: PreviewScaleType;
+} | null>(null);
 
 /**
  * Using Provider to pass the store inside the component
  * @param {children} props - Component properties
  */
 export const StoreProvider: FC = ({ children }) => {
-  const store = useLocalStore(() => ({ previewStore: new PreviewStore() }));
+  const store = useLocalStore(() => ({
+    previewStore: new PreviewStore(),
+    previewScale: new PreviewScale(),
+  }));
 
   return (
     <StoreContext.Provider value={store}>{children}</StoreContext.Provider>

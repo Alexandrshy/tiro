@@ -39,5 +39,7 @@
   --bg-button-dark-hover: var(--shark);
   --bg-button-dark-color: var(--white);
   --bg-preview: var(--link-water);
+  --bg-range: var(--woodsmoke-25);
+  --bg-thumb: var(--woodsmoke);
   --border-footer: var(--silver-chalice);
 }
