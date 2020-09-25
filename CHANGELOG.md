@@ -1,3 +1,10 @@
+## [1.0.8](https://github.com/Alexandrshy/tiro/compare/v1.0.7...v1.0.8) (2020-09-25)
+
+
+### Bug Fixes
+
+* added selector ([bd284da](https://github.com/Alexandrshy/tiro/commit/bd284daca339b68460b21f030070a138b6374bc6))
+
 ## [1.0.7](https://github.com/Alexandrshy/tiro/compare/v1.0.6...v1.0.7) (2020-09-25)
 
 
