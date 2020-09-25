@@ -1,3 +1,11 @@
+## [1.0.12](https://github.com/Alexandrshy/tiro/compare/v1.0.11...v1.0.12) (2020-09-25)
+
+
+### Bug Fixes
+
+* [security] bump elliptic from 6.4.1 to 6.5.3 ([01a6539](https://github.com/Alexandrshy/tiro/commit/01a6539e5e9f8e5fb845962ede1c9aebd1760a23))
+* [security] bump js-yaml from 3.12.0 to 3.14.0 ([edb206a](https://github.com/Alexandrshy/tiro/commit/edb206a02d5e366a35328ab6e99490297c0a51dc))
+
 ## [1.0.11](https://github.com/Alexandrshy/tiro/compare/v1.0.10...v1.0.11) (2020-09-25)
 
 
