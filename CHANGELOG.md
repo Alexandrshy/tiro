@@ -1,3 +1,11 @@
+## [1.0.14](https://github.com/Alexandrshy/tiro/compare/v1.0.13...v1.0.14) (2020-09-25)
+
+
+### Bug Fixes
+
+* added footer ([e29c2b9](https://github.com/Alexandrshy/tiro/commit/e29c2b92543efc0c453d4da1aab082a730802ede))
+* added helper for conver color ([643c4dc](https://github.com/Alexandrshy/tiro/commit/643c4dc61c73ddcb9d01ed6b7ded13c0eb52b1af))
+
 ## [1.0.13](https://github.com/Alexandrshy/tiro/compare/v1.0.12...v1.0.13) (2020-09-25)
 
 
