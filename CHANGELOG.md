@@ -1,3 +1,21 @@
+## [1.0.12](https://github.com/Alexandrshy/tiro/compare/v1.0.11...v1.0.12) (2020-09-25)
+
+
+### Bug Fixes
+
+* [security] bump elliptic from 6.4.1 to 6.5.3 ([01a6539](https://github.com/Alexandrshy/tiro/commit/01a6539e5e9f8e5fb845962ede1c9aebd1760a23))
+* [security] bump js-yaml from 3.12.0 to 3.14.0 ([edb206a](https://github.com/Alexandrshy/tiro/commit/edb206a02d5e366a35328ab6e99490297c0a51dc))
+
+## [1.0.11](https://github.com/Alexandrshy/tiro/compare/v1.0.10...v1.0.11) (2020-09-25)
+
+
+### Bug Fixes
+
+* [security] bump acorn from 5.7.3 to 5.7.4 ([73f406d](https://github.com/Alexandrshy/tiro/commit/73f406d7fa84e8bf718f62bea14a8eea301aeb15))
+* bump lint-staged from 10.3.0 to 10.4.0 ([6385a06](https://github.com/Alexandrshy/tiro/commit/6385a067055fa7e4e11b01d53f2eff0ca5027045))
+* bump typescript from 4.0.2 to 4.0.3 ([9b6cc26](https://github.com/Alexandrshy/tiro/commit/9b6cc2692c869c01af47dee5a5a8896f0ab9e4b0))
+* fixed package.json after merge ([a64c842](https://github.com/Alexandrshy/tiro/commit/a64c842f082f1ec77b52f03c53a5437ad01d03ae))
+
 ## [1.0.10](https://github.com/Alexandrshy/tiro/compare/v1.0.9...v1.0.10) (2020-09-25)
 
 
