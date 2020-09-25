@@ -1,3 +1,11 @@
+## [1.0.9](https://github.com/Alexandrshy/tiro/compare/v1.0.8...v1.0.9) (2020-09-25)
+
+
+### Bug Fixes
+
+* added useEffect for App ([334abc0](https://github.com/Alexandrshy/tiro/commit/334abc0f223ecdca808829de07b284376f983846))
+* fixed alias ([b442ed6](https://github.com/Alexandrshy/tiro/commit/b442ed642fd6d7c6805619ced43eed75970a9460))
+
 ## [1.0.8](https://github.com/Alexandrshy/tiro/compare/v1.0.7...v1.0.8) (2020-09-25)
 
 
