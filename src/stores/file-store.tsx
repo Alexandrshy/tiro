@@ -1,20 +1,20 @@
-import { observable, action } from "mobx";
+import { action, observable } from "mobx";
 
 /**
  * Defining a store for working with image previews
  */
 export class PreviewStore {
   @observable
-  file: number | null = null;
+  file: string | null = null;
 
   @action
-  setFile(event: React.MouseEvent) {
-    console.log("event2", event);
-    this.file = 10;
+  setFile(event: React.ChangeEvent<HTMLInputElement>) {
+    if (event.target.files)
+      this.file = URL.createObjectURL(event.target.files[0]);
   }
 }
 
 export type PreviewStoreType = {
-  file: number | null;
-  setFile: (event: React.MouseEvent) => void;
+  file: string | null;
+  setFile: (event: React.ChangeEvent<HTMLInputElement>) => void;
 };
