@@ -1,0 +1,15 @@
+.aside {
+  display: flex;
+  flex-direction: column;
+  min-width: 350px;
+  padding: 3rem 2rem;
+}
+
+.list {
+  margin: 0;
+  overflow: hidden auto;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 3rem;
+}
