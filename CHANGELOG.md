@@ -1,3 +1,14 @@
+## [1.0.13](https://github.com/Alexandrshy/tiro/compare/v1.0.12...v1.0.13) (2020-09-25)
+
+
+### Bug Fixes
+
+* [security] bump lodash.template from 4.4.0 to 4.5.0 ([271ff26](https://github.com/Alexandrshy/tiro/commit/271ff2610bf51856325899fd3dee6540cf4f6968))
+* [security] bump mixin-deep from 1.3.1 to 1.3.2 ([4391e79](https://github.com/Alexandrshy/tiro/commit/4391e79f2350970a3bce136c6c8094a06dfe5972))
+* [security] bump websocket-extensions from 0.1.3 to 0.1.4 ([67e89b1](https://github.com/Alexandrshy/tiro/commit/67e89b1c7a319e4b92f5897b9f0507d144e09198))
+* bump mobx from 5.15.6 to 5.15.7 ([f5ba651](https://github.com/Alexandrshy/tiro/commit/f5ba651c32a275cc4b2207fa8f730e22a35f2682))
+* bump ts-loader from 8.0.3 to 8.0.4 ([bc2e2ae](https://github.com/Alexandrshy/tiro/commit/bc2e2ae5fcff217989d34baf4a32f1d80ceed434))
+
 ## [1.0.12](https://github.com/Alexandrshy/tiro/compare/v1.0.11...v1.0.12) (2020-09-25)
 
 
