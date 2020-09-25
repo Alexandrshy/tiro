@@ -17,8 +17,6 @@
 }
 
 .element {
-  width: 1600px;
-  height: 1200px;
   background-color: #f1dddd;
   margin: auto;
   transform: scale(0.25);
