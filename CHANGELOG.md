@@ -1,3 +1,11 @@
+## [1.0.10](https://github.com/Alexandrshy/tiro/compare/v1.0.9...v1.0.10) (2020-09-25)
+
+
+### Bug Fixes
+
+* added input color ([fbee2ec](https://github.com/Alexandrshy/tiro/commit/fbee2ecb5ebb1f27597a118d8357f6c531d7469a))
+* added input component ([ddb539e](https://github.com/Alexandrshy/tiro/commit/ddb539e131563b410be0958285907e6aebcd2e88))
+
 ## [1.0.9](https://github.com/Alexandrshy/tiro/compare/v1.0.8...v1.0.9) (2020-09-25)
 
 
