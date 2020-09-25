@@ -13,7 +13,9 @@ module.exports = {
         groups: [
           ["^\\u0000"],
           ["^@?\\w"],
-          ["^@components(/.*|$)|images(/.*|$)|stores(/.*|$)"],
+          [
+            "^@components(/.*|$)|@images(/.*|$)|@stores(/.*|$)|@constants(/.*|$)|@helpers(/.*|$)",
+          ],
           ["^[^.]"],
           ["^\\."],
         ],

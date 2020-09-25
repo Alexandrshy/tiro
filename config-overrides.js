@@ -19,5 +19,7 @@ module.exports = override(
     "@components": path.resolve(__dirname, "src/components"),
     "@images": path.resolve(__dirname, "src/images"),
     "@stores": path.resolve(__dirname, "src/stores"),
+    "@constants": path.resolve(__dirname, "src/constants"),
+    "@helpers": path.resolve(__dirname, "src/helpers"),
   })
 );
