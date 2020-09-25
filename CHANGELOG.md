@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/Alexandrshy/tiro/compare/v1.0.5...v1.0.6) (2020-09-22)
+
+
+### Bug Fixes
+
+* added range slider ([2d04e28](https://github.com/Alexandrshy/tiro/commit/2d04e28588f52f25fc9f4a420613952150c7d759))
+
 ## [1.0.5](https://github.com/Alexandrshy/tiro/compare/v1.0.4...v1.0.5) (2020-09-20)
 
 
