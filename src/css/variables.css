@@ -10,8 +10,8 @@
   --woodsmoke: #171a21;
   --woodsmoke-25: rgba(23, 26, 33, 0.25);
   --black-squeeze: #f7fafc;
-  --foam: #eaf6fd;
   --black-squeeze-25: rgba(247, 250, 252, 0.25);
+  --foam: #eaf6fd;
   --dodger-blue: #1479ca;
   --curious-blue: #2789d8;
   --dodger-blue-25: rgba(20, 121, 202, 0.25);
@@ -41,5 +41,5 @@
   --bg-preview: var(--link-water);
   --bg-range: var(--woodsmoke-25);
   --bg-thumb: var(--woodsmoke);
-  --border-footer: var(--silver-chalice);
+  --border-gray: var(--silver-chalice);
 }

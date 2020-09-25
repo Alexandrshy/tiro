@@ -31,7 +31,7 @@ a {
 
 .link:focus {
   outline: none;
-  box-shadow: 0 0 0 0.125rem var(--bg-button-base-focus);
+  box-shadow: 0 0 0 0.125rem var(--bg-button-white-focus);
 }
 
 @media (hover: hover) {
@@ -61,4 +61,14 @@ button {
 
 img {
   max-width: 100%;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
