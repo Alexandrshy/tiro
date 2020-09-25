@@ -13448,6 +13448,11 @@ v8-compile-cache@^2.0.3:
   resolved "https://registry.yarnpkg.com/v8-compile-cache/-/v8-compile-cache-2.1.1.tgz#54bc3cdd43317bca91e35dcaf305b1a7237de745"
   integrity sha512-8OQ9CL+VWyt3JStj7HX7/ciTL2V3Rl1Wf5OL+SNTm0yK1KvtReVulksyeRnCANHHuUxHlQig+JJDlUhBt1NQDQ==
 
+validate-color@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/validate-color/-/validate-color-2.1.0.tgz#ba32664db859a197c19520b50316b8b8d5ffa0bc"
+  integrity sha512-/78x9MDsanOisNfa4UxombQkPCE2A/hmFUtgunwGutpAgTRnhKvOhzJ4KeSDunbKEla6T+u0OlHd1hWCLVhSdA==
+
 validate-npm-package-license@^3.0.1, validate-npm-package-license@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/validate-npm-package-license/-/validate-npm-package-license-3.0.4.tgz#fc91f6b9c7ba15c857f4cb2c5defeec39d4f410a"
