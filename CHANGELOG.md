@@ -1,3 +1,13 @@
+## [1.0.7](https://github.com/Alexandrshy/tiro/compare/v1.0.6...v1.0.7) (2020-09-25)
+
+
+### Bug Fixes
+
+* added store for canvas ([c5d5415](https://github.com/Alexandrshy/tiro/commit/c5d5415799466bbda2e7ae171573f18587887e75))
+* added store for color ([435e5e7](https://github.com/Alexandrshy/tiro/commit/435e5e7c3d649773811ae6a09caa09a95f164052))
+* added store for size ([71bae8b](https://github.com/Alexandrshy/tiro/commit/71bae8b081d6553317938e2beb2ea74f6fb455ba))
+* expanded the context for the app ([9bfe8eb](https://github.com/Alexandrshy/tiro/commit/9bfe8eb1dbe0131bba69d5494b682c207c00446a))
+
 ## [1.0.6](https://github.com/Alexandrshy/tiro/compare/v1.0.5...v1.0.6) (2020-09-22)
 
 
