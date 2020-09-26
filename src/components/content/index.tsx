@@ -6,7 +6,10 @@ import { Preview } from "@components/preview";
 
 import style from "./style.module.css";
 
-export const Content: React.FC = ({ children }) => {
+/**
+ * Wrapping the aside and main part of the application
+ */
+export const Content: React.FC = () => {
   return (
     <div className={style.wrapper}>
       <Aside />
