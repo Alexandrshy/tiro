@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import React from "react";
+import React, { useCallback } from "react";
 
 import { PreviewType } from "@stores/canvas";
 
@@ -31,8 +31,11 @@ export const Select: React.FC<PropsType> = ({
   onChange,
   children,
 }) => {
-  const onChangehandler = (event: React.ChangeEvent<HTMLSelectElement>) =>
-    onChange(event.target.value as PreviewType);
+  const onChangeHandler = useCallback(
+    (event: React.ChangeEvent<HTMLSelectElement>) =>
+      onChange(event.target.value as PreviewType),
+    [onChange]
+  );
 
   return (
     <div className={style.wrapper}>
@@ -47,7 +50,7 @@ export const Select: React.FC<PropsType> = ({
       <select
         id={id}
         className={classNames(style.select, className)}
-        onChange={onChangehandler}
+        onChange={onChangeHandler}
       >
         {options.map((item) => (
           <option value={item} key={item}>
