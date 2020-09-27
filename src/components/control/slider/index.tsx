@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import React, { useCallback } from "react";
+import React from "react";
 
 import style from "./style.module.css";
 
@@ -33,33 +33,26 @@ export const Slider: React.FC<PropsType> = ({
   className,
   onChange,
   children,
-}) => {
-  const onChangeHandler = useCallback(
-    (event: React.ChangeEvent<HTMLInputElement>) => onChange(event),
-    [onChange]
-  );
-
-  return (
-    <div className={style.wrapper}>
-      <div className={style.box}>
-        <input
-          id={id}
-          type="range"
-          className={classNames(style.input, className)}
-          value={value}
-          min={min}
-          max={max}
-          onChange={onChangeHandler}
-        />
-        <label
-          htmlFor={id}
-          className={classNames({
-            "visually-hidden": !isVisibleLabel,
-          })}
-        >
-          {children}
-        </label>
-      </div>
+}) => (
+  <div className={style.wrapper}>
+    <div className={style.box}>
+      <input
+        id={id}
+        type="range"
+        className={classNames(style.input, className)}
+        value={value}
+        min={min}
+        max={max}
+        onChange={onChange}
+      />
+      <label
+        htmlFor={id}
+        className={classNames({
+          "visually-hidden": !isVisibleLabel,
+        })}
+      >
+        {children}
+      </label>
     </div>
-  );
-};
+  </div>
+);
