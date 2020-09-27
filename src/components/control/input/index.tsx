@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import React from "react";
+import React, { useCallback } from "react";
 
 import style from "./style.module.css";
 
@@ -32,8 +32,11 @@ export const Input: React.FC<PropsType> = ({
   onBlur = () => {},
   children,
 }) => {
-  const onChangehandler = (event: React.ChangeEvent<HTMLInputElement>) =>
-    onChange(event.target.value);
+  const onChangeHandler = useCallback(
+    (event: React.ChangeEvent<HTMLInputElement>) =>
+      onChange(event.target.value),
+    [onChange]
+  );
 
   return (
     <div className={style.wrapper}>
@@ -53,7 +56,7 @@ export const Input: React.FC<PropsType> = ({
           { [style.rightOffset]: rightPointer },
           className
         )}
-        onChange={onChangehandler}
+        onChange={onChangeHandler}
         onBlur={onBlur}
         value={value}
       />
