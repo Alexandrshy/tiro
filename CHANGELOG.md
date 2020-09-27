@@ -1,3 +1,18 @@
+## [1.0.15](https://github.com/Alexandrshy/tiro/compare/v1.0.14...v1.0.15) (2020-09-27)
+
+
+### Bug Fixes
+
+* added jsdoc for footer ([62d7845](https://github.com/Alexandrshy/tiro/commit/62d78455d775432efad08625633d621e1c711bef))
+* added typescript ([ba4fbfb](https://github.com/Alexandrshy/tiro/commit/ba4fbfb5e546d511c9a8e904c06ce4b161ab9e24))
+* fixed content with new slider component ([8b558b6](https://github.com/Alexandrshy/tiro/commit/8b558b64025ad2415da8e782d57bf0870b1f3034))
+* fixed input control ([ebf24b6](https://github.com/Alexandrshy/tiro/commit/ebf24b65c534b6a0d0eefe2bebedcf077ac847be))
+* fixed select control ([fdc7693](https://github.com/Alexandrshy/tiro/commit/fdc7693ff3feca584412fe46c897b79a196e77e2))
+* fixed slider control ([79ddc08](https://github.com/Alexandrshy/tiro/commit/79ddc08f776fef78d4487d82c8fa7c75cd378fce))
+* fixed slider control ([2390413](https://github.com/Alexandrshy/tiro/commit/239041318653fa4ce55387c49c251192368b7b21))
+* fixed upload control ([0a07043](https://github.com/Alexandrshy/tiro/commit/0a07043fbe7f4d9858629fc76c44d62733e6ac9c))
+* removed unused prop and add jsdoc ([de340ad](https://github.com/Alexandrshy/tiro/commit/de340ad0bc4e5e2fdae3ba0c8f61a0c58ef9de0f))
+
 ## [1.0.14](https://github.com/Alexandrshy/tiro/compare/v1.0.13...v1.0.14) (2020-09-25)
 
 
