@@ -38,19 +38,3 @@
     background-color: var(--shark);
   }
 }
-
-.logo {
-  width: 32px;
-  height: 32px;
-  margin-bottom: 0.5rem;
-  stroke: var(--gray-text);
-}
-
-.title {
-  margin-bottom: 0.25rem;
-  font-size: 0.85em;
-}
-
-.subtitle {
-  font-size: 0.75rem;
-}
