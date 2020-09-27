@@ -9,10 +9,6 @@
   max-width: 120px;
 }
 
-.label {
-  font-size: 0;
-}
-
 .input {
   height: 21px;
   -webkit-appearance: none;
