@@ -9,12 +9,19 @@ export class PreviewStore {
 
   @action
   setFile(event: React.ChangeEvent<HTMLInputElement>) {
-    if (event.target.files)
+    if (event.target.files && event.target.files[0]) {
       this.file = URL.createObjectURL(event.target.files[0]);
+    }
+  }
+
+  @action
+  removeFile() {
+    this.file = null;
   }
 }
 
 export type PreviewStoreType = {
   file: string | null;
   setFile: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  removeFile: () => void;
 };
