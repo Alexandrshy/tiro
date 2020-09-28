@@ -41,7 +41,11 @@
     "lint": "eslint '*/**/*.{ts,tsx}'"
   },
   "dependencies": {
+    "@types/dom-to-image": "^2.6.2",
+    "@types/file-saver": "^2.0.1",
     "classnames": "^2.2.6",
+    "dom-to-image": "^2.6.0",
+    "file-saver": "^2.0.2",
     "mobx": "^5.15.7",
     "mobx-react": "^6.3.0",
     "react": "^16.13.1",
