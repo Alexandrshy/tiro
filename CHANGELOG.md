@@ -1,3 +1,18 @@
+## [1.0.16](https://github.com/Alexandrshy/tiro/compare/v1.0.15...v1.0.16) (2020-10-02)
+
+
+### Bug Fixes
+
+* added new icons ([f5f6188](https://github.com/Alexandrshy/tiro/commit/f5f6188fe116b569ff4bd3ce371ffe035f8c30f1))
+* added new packages ([e175893](https://github.com/Alexandrshy/tiro/commit/e17589365cc3026a97669529810e0c8517fc7c46))
+* fixed aside contol ([46fc815](https://github.com/Alexandrshy/tiro/commit/46fc8152edc2641fc6418c41ed894a0215b42877))
+* fixed const ([8b57bc5](https://github.com/Alexandrshy/tiro/commit/8b57bc5dcb4971aea3d156e5c23eb26631ec2d89))
+* fixed preview ([4ae9fb3](https://github.com/Alexandrshy/tiro/commit/4ae9fb32478d3e1bdda51a19da071c59b6519a6c))
+* fixed store ([86b2991](https://github.com/Alexandrshy/tiro/commit/86b299161a0cf0f2fb48ce160749c2f29d2a620a))
+* fixed store data ([5df7ded](https://github.com/Alexandrshy/tiro/commit/5df7dedec0d18e8b129c55fbc7f9f9b3480d1d4d))
+* fixed subtitle ([7e9595b](https://github.com/Alexandrshy/tiro/commit/7e9595b281640fdcdbc516fb16e801733e0e98da))
+* fixed upload input ([a531073](https://github.com/Alexandrshy/tiro/commit/a531073c82d145f6a359414a97738574b620119b))
+
 ## [1.0.15](https://github.com/Alexandrshy/tiro/compare/v1.0.14...v1.0.15) (2020-09-27)
 
 
