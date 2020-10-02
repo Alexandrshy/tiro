@@ -1,28 +1,28 @@
 import { action, observable } from "mobx";
 
-import { DEFAULT_WIDTH } from "@constants/size";
+import { DEFAULT_HEIGHT, DEFAULT_WIDTH } from "@constants/size";
 
-export type ValueType = { width: number; height: number };
+export type ValueType = { width?: string; height?: string };
 
 /**
  * Defining a store for working with preview size
  */
 export class PreviewSize {
   @observable
-  width: number = DEFAULT_WIDTH;
+  width: string = DEFAULT_WIDTH;
 
   @observable
-  height: number = DEFAULT_WIDTH;
+  height: string = DEFAULT_HEIGHT;
 
   @action
   setSize({ width, height }: ValueType) {
-    if (width) this.width = width;
-    if (height) this.height = height;
+    if (width !== undefined) this.width = width.replace(/[^\d]+/g, "");
+    if (height !== undefined) this.height = height.replace(/[^\d]+/g, "");
   }
 }
 
 export type PreviewSizeType = {
-  width: number;
-  height: number;
+  width: string;
+  height: string;
   setSize: (value: ValueType) => void;
 };
