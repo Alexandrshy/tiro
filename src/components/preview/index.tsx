@@ -24,6 +24,7 @@ export const Preview: React.FC = observer(() => {
   const width = store.previewSize.width;
   const height = store.previewSize.height;
   const image = store.previewStore.file;
+  const blur = store.previewStore.blur;
 
   return (
     <div className={style.wrapper}>
@@ -44,6 +45,7 @@ export const Preview: React.FC = observer(() => {
               height: `${height}px`,
               backgroundImage: `url(${image})`,
               backgroundColor: bg,
+              filter: `blur(${blur}px)`,
             }}
           ></div>
         </div>

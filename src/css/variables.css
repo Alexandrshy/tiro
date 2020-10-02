@@ -41,5 +41,14 @@
   --bg-preview: var(--link-water);
   --bg-range: var(--woodsmoke-25);
   --bg-thumb: var(--woodsmoke);
+  --bg-range-light: var(--black-squeeze-25);
+  --bg-thumb-light: var(--black-squeeze);
   --border-gray: var(--silver-chalice);
+  --switch: var(--dodger-blue);
+  --switch-focus: var(--dodger-blue-25);
+  --switch-hover: var(--curious-blue);
+  --switch-color: var(--white);
+  --switch-disabled: var(--silver-chalice);
+  --switch-disabled-hover: var(--foam);
+  --switch-disabled-focus: var(--black-squeeze-25);
 }

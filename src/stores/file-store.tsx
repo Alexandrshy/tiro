@@ -7,6 +7,12 @@ export class PreviewStore {
   @observable
   file: string | null = null;
 
+  @observable
+  blur: string = "0";
+
+  @observable
+  isBlur: boolean = false;
+
   @action
   setFile(event: React.ChangeEvent<HTMLInputElement>) {
     if (event.target.files && event.target.files[0]) {
@@ -18,10 +24,24 @@ export class PreviewStore {
   removeFile() {
     this.file = null;
   }
+
+  @action
+  changeBlur(value: string) {
+    this.blur = value;
+  }
+
+  @action
+  switchBlur() {
+    this.isBlur = !this.isBlur;
+  }
 }
 
 export type PreviewStoreType = {
   file: string | null;
+  blur: string;
+  isBlur: boolean;
   setFile: (event: React.ChangeEvent<HTMLInputElement>) => void;
   removeFile: () => void;
+  changeBlur: (value: string) => void;
+  switchBlur: () => void;
 };
