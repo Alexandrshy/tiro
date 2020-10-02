@@ -1,3 +1,14 @@
+## [1.0.17](https://github.com/Alexandrshy/tiro/compare/v1.0.16...v1.0.17) (2020-10-02)
+
+
+### Bug Fixes
+
+* added blur field ([b8c234c](https://github.com/Alexandrshy/tiro/commit/b8c234caaa7a83740c75fb9d0b2d898bd1b96f31))
+* added switch control ([813749d](https://github.com/Alexandrshy/tiro/commit/813749d566e9a11b40a0512a521556d6692eee4b))
+* fixed slider component, added theme for this component ([c3663e4](https://github.com/Alexandrshy/tiro/commit/c3663e400ffbe20275a0d1bffecfd585222e8f2a))
+* returned width ([977fe9d](https://github.com/Alexandrshy/tiro/commit/977fe9d42f761e9bd2a7613f624a3f63adce2584))
+* used switcher ([ae3940c](https://github.com/Alexandrshy/tiro/commit/ae3940cbdd9573d73366cf111b32ad9aaff5235c))
+
 ## [1.0.16](https://github.com/Alexandrshy/tiro/compare/v1.0.15...v1.0.16) (2020-10-02)
 
 
