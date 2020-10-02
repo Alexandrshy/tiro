@@ -3,6 +3,7 @@
   margin: 1rem;
   overflow: auto;
   flex: 1 1 0%;
+  background-color: var(--black-squeeze);
 }
 
 .box {
@@ -17,8 +18,9 @@
 }
 
 .element {
-  background-color: #f1dddd;
   margin: auto;
   transform: scale(0.25);
   transform-origin: left top;
+  background-size: cover;
+  background-position: center;
 }

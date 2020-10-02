@@ -21,29 +21,29 @@ export const Preview: React.FC = observer(() => {
       : DEFAULT_BG_COLOR,
     store.previewColor.opacity
   );
-  const size = store.previewCanvas.value[store.previewCanvas.active];
+  const width = store.previewSize.width;
+  const height = store.previewSize.height;
+  const image = store.previewStore.file;
 
   return (
-    <div
-      className={style.wrapper}
-      style={{
-        backgroundColor: bg,
-      }}
-    >
+    <div className={style.wrapper}>
       <div className={style.box}>
         <div
           className={style.preview}
           style={{
-            width: `${size.width * scale}px`,
-            height: `${size.height * scale}px`,
+            width: `${Number(width) * scale}px`,
+            height: `${Number(height) * scale}px`,
           }}
         >
           <div
+            id="preview"
             className={style.element}
             style={{
               transform: `scale(${scale})`,
-              width: size.width,
-              height: size.height,
+              width: `${width}px`,
+              height: `${height}px`,
+              backgroundImage: `url(${image})`,
+              backgroundColor: bg,
             }}
           ></div>
         </div>
