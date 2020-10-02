@@ -5,7 +5,6 @@ import style from "./style.module.css";
 
 export type PropsType = {
   id: string;
-  file: string | null;
   isVisibleLabel?: boolean;
   className?: string;
   inputRef?: React.RefObject<HTMLInputElement>;
@@ -15,14 +14,12 @@ export type PropsType = {
 /**
  * File upload control
  * @param {string} props.id - Control id
- * @param {string} props.file - Source file
  * @param {boolean} props.isVisibleLabel - Is a visible label
  * @param {string} props.className - Additional className
  * @param {onChange} props.onChange - Method for handling input changes
  */
 export const Upload: React.FC<PropsType> = ({
   id,
-  file,
   isVisibleLabel = true,
   className,
   onChange,
