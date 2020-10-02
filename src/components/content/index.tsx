@@ -13,6 +13,7 @@ import style from "./style.module.css";
  */
 export const Content: React.FC = observer(() => {
   const store = useStore();
+
   const onChangehandler = useCallback(
     (event) => store.previewScale.setScale(event),
     [store.previewScale]
@@ -23,15 +24,17 @@ export const Content: React.FC = observer(() => {
       <Aside />
       <main className={style.mian}>
         <Preview />
-        <Slider
-          id="scale-slider"
-          isVisibleLabel={false}
-          min={10}
-          value={store.previewScale.value}
-          onChange={onChangehandler}
-        >
-          Changing the scale of the preview
-        </Slider>
+        <div className={style.sliderWrapper}>
+          <Slider
+            id="scale-slider"
+            isVisibleLabel={false}
+            min={10}
+            value={store.previewScale.value}
+            onChange={onChangehandler}
+          >
+            Changing the scale of the preview
+          </Slider>
+        </div>
       </main>
     </div>
   );
