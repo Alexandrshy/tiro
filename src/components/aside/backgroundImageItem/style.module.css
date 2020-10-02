@@ -1,0 +1,65 @@
+.img {
+  max-width: 100%;
+  max-height: 148px;
+  margin-right: 45px;
+}
+
+.icon {
+  width: 26px;
+  height: 26px;
+  stroke: var(--gray-text);
+  transition: all 0.3s;
+}
+
+.title {
+  margin-top: 0.5em;
+  margin-bottom: 0.25rem;
+  font-size: 0.85em;
+}
+
+.subtitle {
+  font-size: 0.75rem;
+}
+
+.box {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 45px;
+  height: 100%;
+  border-left: 1px dashed var(--gray-text);
+}
+
+.button {
+  display: block;
+  width: 45px;
+  height: 50%;
+  padding: 5px;
+  border-radius: 5px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.button:first-child {
+  border-radius: 5px 5px 0 0;
+}
+
+.button:last-child {
+  border-radius: 0 0 5px 5px;
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.125rem var(--black-squeeze-25);
+}
+
+@media (hover: hover) {
+  .button:hover .icon {
+    stroke: var(--black-squeeze);
+  }
+}

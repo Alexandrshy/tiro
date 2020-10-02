@@ -1,7 +1,8 @@
 import React from "react";
 
-import { Title } from "@components/aside/title";
-import { Upload } from "@components/control/load";
+import { BackgroundImageItem } from "@components/aside/backgroundImageItem";
+import { CanvasItem } from "@components/aside/canvas";
+import { AsideList } from "@components/aside/list";
 import { Footer } from "@components/footer";
 
 import style from "./style.module.css";
@@ -10,18 +11,17 @@ import style from "./style.module.css";
  * Sidebar with controls for forming previews
  */
 export const Aside: React.FC = () => {
+  const ITEMS = [
+    { name: "background-image", component: BackgroundImageItem },
+    { name: "canvas", component: CanvasItem },
+  ];
+
   return (
-    <aside className={style.aside}>
-      <ul className={style.list}>
-        <li className={style.item}>
-          <Title text="Background image" />
-          <Upload />
-        </li>
-        <li className={style.item}>
-          <Title text="Canvas options" />
-        </li>
-      </ul>
+    <AsideList>
+      {ITEMS.map(({ name, component: Item }) => (
+        <Item key={name} className={style.item} />
+      ))}
       <Footer />
-    </aside>
+    </AsideList>
   );
 };
