@@ -63,3 +63,7 @@
     stroke: var(--black-squeeze);
   }
 }
+
+.upload {
+  margin-bottom: 0.5rem;
+}

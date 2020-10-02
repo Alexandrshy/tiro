@@ -2,6 +2,7 @@ import classNames from "classnames";
 import { observer } from "mobx-react";
 import React, { useCallback, useRef } from "react";
 
+import { BlurSwitcher } from "@components/aside/blur";
 import { Title } from "@components/aside/title";
 import { Upload } from "@components/control/load";
 import { ReactComponent as SvgBasket } from "@images/basket.svg";
@@ -81,6 +82,7 @@ export const BackgroundImageItem: React.FC<PropsType> = observer(
             </>
           )}
         </Upload>
+        {file && <BlurSwitcher />}
       </li>
     );
   }
