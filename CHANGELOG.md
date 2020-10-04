@@ -1,3 +1,12 @@
+## [1.0.18](https://github.com/Alexandrshy/tiro/compare/v1.0.17...v1.0.18) (2020-10-04)
+
+
+### Bug Fixes
+
+* addded click hander for loading img ([f7e429f](https://github.com/Alexandrshy/tiro/commit/f7e429f74e493d378badb8125b65dbaaa962abc6))
+* added new cntrol components for work with canvas ([b56733f](https://github.com/Alexandrshy/tiro/commit/b56733fd400b93addc22103ce9701960d4433bee))
+* removed unused prop ([15d77a7](https://github.com/Alexandrshy/tiro/commit/15d77a76ff8d0109d86cf6cb83c22056c54c4736))
+
 ## [1.0.17](https://github.com/Alexandrshy/tiro/compare/v1.0.16...v1.0.17) (2020-10-02)
 
 
