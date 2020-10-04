@@ -23,8 +23,8 @@ export const Preview: React.FC = observer(() => {
   );
   const width = store.previewSize.width;
   const height = store.previewSize.height;
-  const image = store.previewStore.file;
-  const blur = store.previewStore.blur;
+  const image = store.backgroundImage.file;
+  const blur = store.backgroundImage.blur;
 
   return (
     <div className={style.wrapper}>

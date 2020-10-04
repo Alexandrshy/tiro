@@ -34,16 +34,16 @@ export const BackgroundImageItem: React.FC<PropsType> = observer(
       (event) => {
         event.preventDefault();
         event.stopPropagation();
-        store.previewStore.removeFile();
+        store.backgroundImage.removeFile();
       },
-      [store.previewStore]
+      [store.backgroundImage]
     );
 
     const onChangeHandler = useCallback(
-      (event) => store.previewStore.setFile(event),
-      [store.previewStore]
+      (event) => store.backgroundImage.setFile(event),
+      [store.backgroundImage]
     );
-    const file = store.previewStore.file;
+    const file = store.backgroundImage.file;
 
     return (
       <li className={className}>

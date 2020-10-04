@@ -3,7 +3,7 @@ import React, { createContext, FC, useContext } from "react";
 
 import { PreviewCanvas, PreviewCanvasType } from "@stores/canvas";
 import { PreviewColor, PreviewColorType } from "@stores/color";
-import { PreviewStore, PreviewStoreType } from "@stores/file-store";
+import { BackgroundImage, BackgroundImageType } from "@stores/preview";
 import { PreviewScale, PreviewScaleType } from "@stores/scale";
 import { PreviewSize, PreviewSizeType } from "@stores/size";
 
@@ -11,7 +11,7 @@ import { PreviewSize, PreviewSizeType } from "@stores/size";
  * Create a context
  */
 const StoreContext = createContext<{
-  previewStore: PreviewStoreType;
+  backgroundImage: BackgroundImageType;
   previewScale: PreviewScaleType;
   previewColor: PreviewColorType;
   previewSize: PreviewSizeType;
@@ -24,7 +24,7 @@ const StoreContext = createContext<{
  */
 export const StoreProvider: FC = ({ children }) => {
   const store = useLocalStore(() => ({
-    previewStore: new PreviewStore(),
+    backgroundImage: new BackgroundImage(),
     previewScale: new PreviewScale(),
     previewColor: new PreviewColor(),
     previewSize: new PreviewSize(),

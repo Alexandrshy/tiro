@@ -15,9 +15,10 @@ export const BlurSwitcher: React.FC = observer(() => {
 
   const onBlurHandler = useCallback(
     (event) => {
-      if (event.target.value) store.previewStore.changeBlur(event.target.value);
+      if (event.target.value)
+        store.backgroundImage.changeBlur(event.target.value);
     },
-    [store.previewStore]
+    [store.backgroundImage]
   );
 
   return (
@@ -29,7 +30,7 @@ export const BlurSwitcher: React.FC = observer(() => {
           isVisibleLabel={false}
           min={0}
           max={25}
-          value={store.previewStore.blur}
+          value={store.backgroundImage.blur}
           onChange={onBlurHandler}
           theme="light"
         >

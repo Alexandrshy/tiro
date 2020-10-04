@@ -3,7 +3,7 @@ import { action, observable } from "mobx";
 /**
  * Defining a store for working with image previews
  */
-export class PreviewStore {
+export class BackgroundImage {
   @observable
   file: string | null = null;
 
@@ -36,7 +36,7 @@ export class PreviewStore {
   }
 }
 
-export type PreviewStoreType = {
+export type BackgroundImageType = {
   file: string | null;
   blur: string;
   isBlur: boolean;
