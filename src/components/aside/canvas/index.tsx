@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Title } from "@components/aside/title";
-import { Canvas } from "@components/control/canvas";
+import { Canvas } from "@components/canvas";
 
 export type PropsType = {
   className?: string;

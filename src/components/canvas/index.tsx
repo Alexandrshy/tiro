@@ -1,8 +1,8 @@
 import React from "react";
 
-import { Canvas as CanvasControl } from "@components/control/canvas/canvas";
-import { InputColor } from "@components/control/canvas/color";
-import { InputSize } from "@components/control/canvas/size";
+import { Canvas as CanvasControl } from "@components/canvas/canvas";
+import { InputColor } from "@components/canvas/color";
+import { InputSize } from "@components/canvas/size";
 import { List } from "@components/control/list";
 
 /**
