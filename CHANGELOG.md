@@ -1,3 +1,10 @@
+## [1.0.19](https://github.com/Alexandrshy/tiro/compare/v1.0.18...v1.0.19) (2020-10-04)
+
+
+### Bug Fixes
+
+* moved canvas component to main directory ([6aa4dd9](https://github.com/Alexandrshy/tiro/commit/6aa4dd9f7aa0e76b1937eeb6ee44e252ea727971))
+
 ## [1.0.18](https://github.com/Alexandrshy/tiro/compare/v1.0.17...v1.0.18) (2020-10-04)
 
 
