@@ -24,6 +24,8 @@
   --white-text: var(--black-squeeze);
   --gray-text: var(--silver-chalice);
   --blue-text: var(--curious-blue);
+  --gray-icon: var(--silver-chalice);
+  --white-icon: var(--black-squeeze);
   --bg-main: var(--woodsmoke);
   --bg-header: var(--woodsmoke);
   --bg-button-base: var(--dodger-blue);

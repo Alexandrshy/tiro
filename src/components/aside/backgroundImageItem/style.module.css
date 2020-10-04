@@ -7,7 +7,7 @@
 .icon {
   width: 26px;
   height: 26px;
-  stroke: var(--gray-text);
+  stroke: var(--gray-icon);
   transition: all 0.3s;
 }
 
@@ -32,7 +32,7 @@
   flex-direction: column;
   width: 45px;
   height: 100%;
-  border-left: 1px dashed var(--gray-text);
+  border-left: 1px dashed var(--border-gray);
 }
 
 .button {
@@ -55,12 +55,12 @@
 
 .button:focus {
   outline: none;
-  box-shadow: 0 0 0 0.125rem var(--black-squeeze-25);
+  box-shadow: 0 0 0 0.125rem var(--bg-button-white-focus);
 }
 
 @media (hover: hover) {
   .button:hover .icon {
-    stroke: var(--black-squeeze);
+    stroke: var(--white-icon);
   }
 }
 
