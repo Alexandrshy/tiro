@@ -1,3 +1,12 @@
+## [1.0.20](https://github.com/Alexandrshy/tiro/compare/v1.0.19...v1.0.20) (2020-10-05)
+
+
+### Bug Fixes
+
+* added size and positon for background ([b251182](https://github.com/Alexandrshy/tiro/commit/b251182c86b0acb372b9b8494751c92606e7a497))
+* renamed color ([9f2c2eb](https://github.com/Alexandrshy/tiro/commit/9f2c2ebe13a474f0b44a4467c409d7772bcabc9b))
+* renamed store ([cd0a586](https://github.com/Alexandrshy/tiro/commit/cd0a58650b79e666bb7ee786f5bfeb5134a3dad9))
+
 ## [1.0.19](https://github.com/Alexandrshy/tiro/compare/v1.0.18...v1.0.19) (2020-10-04)
 
 
