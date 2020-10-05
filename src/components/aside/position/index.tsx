@@ -9,40 +9,36 @@ import { useStore } from "@stores/context";
 import style from "./style.module.css";
 
 /**
- * Element with canvas setting
+ * Background position list
  */
-export const Canvas: React.FC = observer(() => {
+export const Position: React.FC = observer(() => {
   const store = useStore();
 
-  const options = Object.keys(store.previewCanvas.value);
-
   /**
-   * Handling input canvas changes
+   * Handling input background position changes
    * @param {string} value - canvas
    */
   const onChangeHanlder = useCallback(
     (value: PreviewType) => {
-      store.previewCanvas.setCanvas(value);
-      const size = store.previewCanvas.activeCanvas;
-      store.previewSize.setSize(size);
+      store.backgroundImage.setPostion(value);
     },
-    [store.previewCanvas, store.previewSize]
+    [store.backgroundImage]
   );
 
   return (
-    <li>
-      <Subtitle text="Canvas" />
-      <div className={style.box}>
+    <div className={style.box}>
+      <Subtitle text="Position" />
+      <div className={style.wrapper}>
         <Select
-          id="canvas-select"
-          options={options}
+          id="postion-select"
+          options={store.backgroundImage.postion}
           isVisibleLabel={false}
           value={store.previewCanvas.active}
           onChange={onChangeHanlder}
         >
-          Canvas
+          Position
         </Select>
       </div>
-    </li>
+    </div>
   );
 });

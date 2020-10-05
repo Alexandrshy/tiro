@@ -8,6 +8,28 @@ export class BackgroundImage {
   file: string | null = null;
 
   @observable
+  postion: string[] = [
+    "Center",
+    "Center Left",
+    "Center Right",
+    "Top Center",
+    "Top Left",
+    "Top Right",
+    "Bottom Center",
+    "Bottom Left",
+    "Bottom Right",
+  ];
+
+  @observable
+  size: string[] = ["Cover", "Auto", "Contain"];
+
+  @observable
+  activePosition: string = this.postion[0];
+
+  @observable
+  activeSize: string = this.size[0];
+
+  @observable
   blur: string = "0";
 
   @observable
@@ -34,14 +56,30 @@ export class BackgroundImage {
   switchBlur() {
     this.isBlur = !this.isBlur;
   }
+
+  @action
+  setPostion(value: string) {
+    this.activePosition = value;
+  }
+
+  @action
+  setSize(value: string) {
+    this.activeSize = value;
+  }
 }
 
 export type BackgroundImageType = {
   file: string | null;
+  postion: string[];
+  size: string[];
+  activePosition: string;
+  activeSize: string;
   blur: string;
   isBlur: boolean;
   setFile: (event: React.ChangeEvent<HTMLInputElement>) => void;
   removeFile: () => void;
   changeBlur: (value: string) => void;
   switchBlur: () => void;
+  setPostion: (value: string) => void;
+  setSize: (value: string) => void;
 };

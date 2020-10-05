@@ -1,0 +1,15 @@
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.box:first-child {
+  margin-top: 1.5rem;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 203px;
+}

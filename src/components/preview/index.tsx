@@ -25,6 +25,8 @@ export const Preview: React.FC = observer(() => {
   const height = store.previewSize.height;
   const image = store.backgroundImage.file;
   const blur = store.backgroundImage.blur;
+  const position = store.backgroundImage.activePosition.toLocaleLowerCase();
+  const size = store.backgroundImage.activeSize.toLocaleLowerCase();
 
   return (
     <div className={style.wrapper}>
@@ -45,9 +47,13 @@ export const Preview: React.FC = observer(() => {
               height: `${height}px`,
               backgroundImage: `url(${image})`,
               backgroundColor: bg,
+              backgroundPosition: position,
+              backgroundSize: size,
               filter: `blur(${blur}px)`,
             }}
-          ></div>
+          >
+            <div className="box"></div>
+          </div>
         </div>
       </div>
     </div>
