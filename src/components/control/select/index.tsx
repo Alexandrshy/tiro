@@ -31,6 +31,10 @@ export const Select: React.FC<PropsType> = ({
   onChange,
   children,
 }) => {
+  /**
+   * Handling select value changes
+   * @param {React.ChangeEvent<HTMLSelectElement>} event - Processed event
+   */
   const onChangeHandler = useCallback(
     (event: React.ChangeEvent<HTMLSelectElement>) =>
       onChange(event.target.value as PreviewType),
