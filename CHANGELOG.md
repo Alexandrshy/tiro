@@ -1,3 +1,11 @@
+## [1.0.21](https://github.com/Alexandrshy/tiro/compare/v1.0.20...v1.0.21) (2020-10-11)
+
+
+### Bug Fixes
+
+* added button for aligning mockups ([864f503](https://github.com/Alexandrshy/tiro/commit/864f5035c3d102459a1b8fab049dc85f96c0304b))
+* added store for working with mockup ([b9fb16c](https://github.com/Alexandrshy/tiro/commit/b9fb16c110f6cde98659658e48a40a2abae9a1a3))
+
 ## [1.0.20](https://github.com/Alexandrshy/tiro/compare/v1.0.19...v1.0.20) (2020-10-05)
 
 
