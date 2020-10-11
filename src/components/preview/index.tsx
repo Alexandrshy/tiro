@@ -2,6 +2,7 @@ import { observer } from "mobx-react";
 import React from "react";
 import { validateHTMLColor } from "validate-color";
 
+import { Mockup } from "@components/mockup";
 import { DEFAULT_BG_COLOR } from "@constants/color";
 import { converHexToRGBA } from "@helpers/color";
 import { useStore } from "@stores/context";
@@ -15,7 +16,7 @@ export const Preview: React.FC = observer(() => {
   const store = useStore();
 
   const scale = Number(store.previewScale.value) / 100;
-  const bg = converHexToRGBA(
+  const color = converHexToRGBA(
     validateHTMLColor(store.previewColor.value)
       ? store.previewColor.value
       : DEFAULT_BG_COLOR,
@@ -42,17 +43,26 @@ export const Preview: React.FC = observer(() => {
             id="preview"
             className={style.element}
             style={{
+              backgroundColor: color,
               transform: `scale(${scale})`,
               width: `${width}px`,
               height: `${height}px`,
-              backgroundImage: `url(${image})`,
-              backgroundColor: bg,
-              backgroundPosition: position,
-              backgroundSize: size,
-              filter: `blur(${blur}px)`,
             }}
           >
-            <div className="box"></div>
+            <div
+              className={style.backgroundImage}
+              style={{
+                backgroundImage: `url(${image})`,
+                backgroundPosition: position,
+                backgroundSize: size,
+                filter: `blur(${blur}px)`,
+              }}
+            ></div>
+            <Mockup
+              scale={scale}
+              previewWidth={Number(width)}
+              previewHeight={Number(height)}
+            />
           </div>
         </div>
       </div>

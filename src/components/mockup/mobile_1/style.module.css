@@ -1,0 +1,8 @@
+.canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--mine-shaft);
+  box-shadow: 15px 25px 45px -13px rgba(0, 0, 0, 0.45);
+  border-radius: 15px;
+}
