@@ -1,3 +1,11 @@
+## [1.0.23](https://github.com/Alexandrshy/tiro/compare/v1.0.22...v1.0.23) (2020-10-11)
+
+
+### Bug Fixes
+
+* added mockup control panel ([59c5c8a](https://github.com/Alexandrshy/tiro/commit/59c5c8a75d87b1c7a99e1873459d6234c997228c))
+* updated inputs ([d988c9c](https://github.com/Alexandrshy/tiro/commit/d988c9cb4c51efa92c752fa3544bae081ddb9f89))
+
 ## [1.0.22](https://github.com/Alexandrshy/tiro/compare/v1.0.21...v1.0.22) (2020-10-11)
 
 
