@@ -1,0 +1,76 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -0.4rem 1.5rem;
+}
+
+.item {
+  width: 50%;
+  padding: 0.4rem;
+}
+
+.itemIsActive .button {
+  border-color: var(--gray-text);
+}
+
+.button {
+  position: relative;
+  width: 100%;
+  height: 90px;
+  padding: 1rem;
+  margin-bottom: 0.55rem;
+  background-color: var(--mine-shaft);
+  border-radius: 5px;
+  border: 1px solid transparent;
+  transition: border-color 0.3s, background-color 0.3s;
+  cursor: pointer;
+}
+
+.button:focus {
+  border-color: var(--black-squeeze);
+  outline: none;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  border-radius: 10px;
+  background-color: var(--tundora);
+  box-shadow: 15px 25px 45px -13px rgba(0, 0, 0, 0.45);
+  transform: translate(-50%, -50%);
+}
+
+.buttonBasic::before {
+  width: 95px;
+  height: 55px;
+}
+
+.buttonMobileOne::before {
+  width: 28px;
+  height: 56px;
+  border-radius: 5px;
+}
+
+.name {
+  display: block;
+  margin: 0 0.5rem;
+  font-size: 0.9rem;
+  color: var(--gray-text);
+}
+
+@media (hover: hover) {
+  .button:hover {
+    border-color: var(--black-squeeze);
+    background-color: var(--shark);
+  }
+}
+
+.itemControl {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}

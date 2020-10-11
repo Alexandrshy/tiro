@@ -3,6 +3,7 @@ import React from "react";
 import { BackgroundImageItem } from "@components/aside/backgroundImageItem";
 import { CanvasItem } from "@components/aside/canvas";
 import { AsideList } from "@components/aside/list";
+import { MockupsItem } from "@components/aside/mockups";
 import { Footer } from "@components/footer";
 
 import style from "./style.module.css";
@@ -12,8 +13,12 @@ import style from "./style.module.css";
  */
 export const Aside: React.FC = () => {
   const ITEMS = [
-    { name: "background-image", component: BackgroundImageItem },
+    { name: "mockups", component: MockupsItem },
     { name: "canvas", component: CanvasItem },
+    {
+      name: "background-image",
+      component: BackgroundImageItem,
+    },
   ];
 
   return (
