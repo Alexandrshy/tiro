@@ -38,14 +38,17 @@ export const Basic: React.FC<PropsType> = observer(
      * Center align
      */
     useEffect(() => {
-      autorun(() => {
-        store.mockup.setPosition({
-          x: previewWidth / 2 - store.mockup.size.width / 2,
-          y: previewHeight / 2 - store.mockup.size.height / 2,
-        });
+      store.mockup.setPosition({
+        x: previewWidth / 2 - store.mockup.size.width / 2,
+        y: previewHeight / 2 - store.mockup.size.height / 2,
       });
-      // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
+    }, [
+      previewWidth,
+      previewHeight,
+      store.mockup.size.width,
+      store.mockup.size.height,
+      store.mockup,
+    ]);
 
     /**
      * Handling an item drag event
