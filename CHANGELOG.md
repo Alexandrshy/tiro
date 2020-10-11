@@ -1,3 +1,13 @@
+## [1.0.22](https://github.com/Alexandrshy/tiro/compare/v1.0.21...v1.0.22) (2020-10-11)
+
+
+### Bug Fixes
+
+* added primary mockups ([1bff23d](https://github.com/Alexandrshy/tiro/commit/1bff23ddcab9bdcf8b5290f9c0e4c866282c6fcc))
+* added react-draggable dependency ([66a81fc](https://github.com/Alexandrshy/tiro/commit/66a81fc03bd24610fdcbc04092e792be263aa83c))
+* little refactoring to bring the general style ([0ba40b1](https://github.com/Alexandrshy/tiro/commit/0ba40b17b4cec45dc5bacb5d1b37ef7adf966bd4))
+* updated const for color ([f65e8a4](https://github.com/Alexandrshy/tiro/commit/f65e8a4d52cb93ea456a2491314390fe3c4e3296))
+
 ## [1.0.21](https://github.com/Alexandrshy/tiro/compare/v1.0.20...v1.0.21) (2020-10-11)
 
 
