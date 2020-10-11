@@ -1,0 +1,32 @@
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.button {
+  padding: 0.5rem;
+  font-size: 0;
+  box-shadow: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button svg {
+  width: 31px;
+  height: 31px;
+  stroke: var(--bg-button-base);
+  transition: stroke 0.3s;
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.125rem var(--bg-button-base-focus);
+}
+
+@media (hover: hover) {
+  .button:hover svg {
+    stroke: var(--bg-button-base-hover);
+  }
+}
