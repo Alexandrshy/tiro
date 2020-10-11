@@ -49,7 +49,7 @@ export const InputColor: React.FC = observer(() => {
    */
   const onValidateOpacityHandler = useCallback(() => {
     const currentOpacity = store.previewColor.opacity;
-    if (Number(currentOpacity) > 100 || Number(currentOpacity) <= 0)
+    if (Number(currentOpacity) > 100 || Number(currentOpacity) < 0)
       store.previewColor.setOpacity(DEFAULT_OPACITY_COLOR);
   }, [store.previewColor]);
 
@@ -87,6 +87,9 @@ export const InputColor: React.FC = observer(() => {
             onBlur={onValidateOpacityHandler}
             value={store.previewColor.opacity}
             rightPointer="%"
+            type="number"
+            min="0"
+            max="100"
           >
             Opacity
           </Input>

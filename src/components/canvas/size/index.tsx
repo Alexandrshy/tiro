@@ -44,6 +44,8 @@ export const InputSize: React.FC = observer(() => {
             onChange={onWidthChangeHanlder}
             value={store.previewSize.width}
             rightPointer="px"
+            leftPointer="w"
+            type="number"
           >
             Width
           </Input>
@@ -55,6 +57,8 @@ export const InputSize: React.FC = observer(() => {
             onChange={onHeightChangeHanlder}
             value={store.previewSize.height}
             rightPointer="px"
+            leftPointer="h"
+            type="number"
           >
             Height
           </Input>
