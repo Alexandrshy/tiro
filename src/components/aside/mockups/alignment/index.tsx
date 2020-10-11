@@ -22,22 +22,20 @@ export const Alignment: React.FC = observer(() => {
    */
   const onClickHandler = useCallback(
     (value: string) => {
-      const {
-        width: canvasWidth,
-        height: canvasHeight,
-      } = store.previewCanvas.activeCanvas;
+      const width = store.previewSize.width;
+      const height = store.previewSize.height;
       switch (value) {
         case "left":
           store.mockup.setPosition({ x: 0 });
           break;
         case "center":
           store.mockup.setPosition({
-            x: Number(canvasWidth) / 2 - store.mockup.size.width / 2,
+            x: Number(width) / 2 - store.mockup.size.width / 2,
           });
           break;
         case "right":
           store.mockup.setPosition({
-            x: Number(canvasWidth) - Number(store.mockup.size.width),
+            x: Number(width) - Number(store.mockup.size.width),
           });
           break;
         case "top":
@@ -45,17 +43,17 @@ export const Alignment: React.FC = observer(() => {
           break;
         case "middle":
           store.mockup.setPosition({
-            y: Number(canvasHeight) / 2 - store.mockup.size.height / 2,
+            y: Number(height) / 2 - store.mockup.size.height / 2,
           });
           break;
         case "bottom":
           store.mockup.setPosition({
-            y: Number(canvasHeight) - Number(store.mockup.size.height),
+            y: Number(height) - Number(store.mockup.size.height),
           });
           break;
       }
     },
-    [store.mockup, store.previewCanvas.activeCanvas]
+    [store.mockup, store.previewSize.height, store.previewSize.width]
   );
 
   const ICONS = [
