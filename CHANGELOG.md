@@ -1,3 +1,11 @@
+## [1.0.24](https://github.com/Alexandrshy/tiro/compare/v1.0.23...v1.0.24) (2020-10-11)
+
+
+### Bug Fixes
+
+* fixed alignment ([a83b97e](https://github.com/Alexandrshy/tiro/commit/a83b97e520e00257729d2731a69b5cd38c0d9648))
+* fixed centring ([00dc61c](https://github.com/Alexandrshy/tiro/commit/00dc61c1e80e14c6728a8fdb68bff79978f68ba3))
+
 ## [1.0.23](https://github.com/Alexandrshy/tiro/compare/v1.0.22...v1.0.23) (2020-10-11)
 
 
