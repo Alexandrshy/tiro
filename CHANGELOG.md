@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/Alexandrshy/tiro/compare/v1.0.24...v1.1.0) (2020-10-20)
+
+
+### Features
+
+* changed the structure of the store for mockups ([01e6a37](https://github.com/Alexandrshy/tiro/commit/01e6a37b185a0a4e512e0cc0ebb49fbe19109aeb))
+
 ## [1.0.24](https://github.com/Alexandrshy/tiro/compare/v1.0.23...v1.0.24) (2020-10-11)
 
 
