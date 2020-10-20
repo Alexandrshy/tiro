@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import React from "react";
+import React, { useCallback } from "react";
 
 import style from "./style.module.css";
 
@@ -11,7 +11,7 @@ export type PropsType = {
   theme?: "dark" | "light";
   value: string;
   className?: string;
-  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  onChange: (value: string) => void;
 };
 
 /**
@@ -35,28 +35,40 @@ export const Slider: React.FC<PropsType> = ({
   className,
   onChange,
   children,
-}) => (
-  <div className={style.box}>
-    <input
-      id={id}
-      type="range"
-      className={classNames(
-        style.input,
-        { [style.inputLight]: theme === "light" },
-        className
-      )}
-      value={value}
-      min={min}
-      max={max}
-      onChange={onChange}
-    />
-    <label
-      htmlFor={id}
-      className={classNames({
-        "visually-hidden": !isVisibleLabel,
-      })}
-    >
-      {children}
-    </label>
-  </div>
-);
+}) => {
+  /**
+   * Handling input value changes
+   * @param {React.ChangeEvent<HTMLInputElement>} event - Processed event
+   */
+  const onChangeHandler = useCallback(
+    (event: React.ChangeEvent<HTMLInputElement>) =>
+      onChange(event.target.value),
+    [onChange]
+  );
+
+  return (
+    <div className={style.box}>
+      <input
+        id={id}
+        type="range"
+        className={classNames(
+          style.input,
+          { [style.inputLight]: theme === "light" },
+          className
+        )}
+        value={value}
+        min={min}
+        max={max}
+        onChange={onChangeHandler}
+      />
+      <label
+        htmlFor={id}
+        className={classNames({
+          "visually-hidden": !isVisibleLabel,
+        })}
+      >
+        {children}
+      </label>
+    </div>
+  );
+};

@@ -1,0 +1,19 @@
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 203px;
+}
+
+.wrapper {
+  margin: 0 0.25rem;
+}
+
+.wrapper:first-child {
+  margin-left: 0;
+}
+
+.wrapper:last-child {
+  margin-right: 0;
+}

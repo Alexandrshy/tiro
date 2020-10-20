@@ -15,7 +15,7 @@ export const Content: React.FC = observer(() => {
   const store = useStore();
 
   const onChangehandler = useCallback(
-    (event) => store.previewScale.setScale(event),
+    (value) => store.previewScale.setScale(value),
     [store.previewScale]
   );
 

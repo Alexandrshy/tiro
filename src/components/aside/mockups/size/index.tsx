@@ -7,10 +7,14 @@ import { useStore } from "@stores/context";
 
 import style from "./style.module.css";
 
+export type PropsType = {
+  index: number;
+};
+
 /**
  * Mockup size
  */
-export const Size: React.FC = observer(() => {
+export const Size: React.FC<PropsType> = observer(({ index }) => {
   const store = useStore();
 
   /**
@@ -19,9 +23,9 @@ export const Size: React.FC = observer(() => {
    */
   const onWidthChangeHanlder = useCallback(
     (value: string) => {
-      store.mockup.setSize({ width: Number(value) });
+      store.mockup.setSize({ width: Number(value) }, index);
     },
-    [store.mockup]
+    [store.mockup, index]
   );
 
   /**
@@ -30,9 +34,9 @@ export const Size: React.FC = observer(() => {
    */
   const onHeightChangeHanlder = useCallback(
     (value: string) => {
-      store.mockup.setSize({ height: Number(value) });
+      store.mockup.setSize({ height: Number(value) }, index);
     },
-    [store.mockup]
+    [store.mockup, index]
   );
 
   return (
@@ -44,7 +48,12 @@ export const Size: React.FC = observer(() => {
             id="mockup-width"
             isVisibleLabel={false}
             onChange={onWidthChangeHanlder}
-            value={String(Math.ceil(store.mockup.size.width))}
+            value={String(
+              Math.ceil(
+                store.mockup.options[store.mockup.activeMockup].size[index]
+                  .width
+              )
+            )}
             rightPointer="px"
             leftPointer="w"
             type="number"
@@ -59,7 +68,12 @@ export const Size: React.FC = observer(() => {
             id="mockup-height"
             isVisibleLabel={false}
             onChange={onHeightChangeHanlder}
-            value={String(Math.ceil(store.mockup.size.height))}
+            value={String(
+              Math.ceil(
+                store.mockup.options[store.mockup.activeMockup].size[index]
+                  .height
+              )
+            )}
             rightPointer="px"
             leftPointer="h"
             type="number"

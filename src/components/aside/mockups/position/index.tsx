@@ -7,11 +7,18 @@ import { useStore } from "@stores/context";
 
 import style from "./style.module.css";
 
+export type PropsType = {
+  index: number;
+};
+
 /**
  * Mockup position on canvas
  */
-export const Position: React.FC = observer(() => {
+export const Position: React.FC<PropsType> = observer(({ index }) => {
   const store = useStore();
+
+  const position =
+    store.mockup.options[store.mockup.activeMockup].position[index];
 
   /**
    * Handling input horizontal position changes
@@ -19,10 +26,10 @@ export const Position: React.FC = observer(() => {
    */
   const onPositionXChangeHanlder = useCallback(
     (value: string) => {
-      if (!value) store.mockup.setPosition({ x: 0 });
-      store.mockup.setPosition({ x: Number(value) });
+      if (!value) store.mockup.setPosition({ x: 0 }, index);
+      store.mockup.setPosition({ x: Number(value) }, index);
     },
-    [store.mockup]
+    [store.mockup, index]
   );
 
   /**
@@ -31,11 +38,13 @@ export const Position: React.FC = observer(() => {
    */
   const onPositionYChangeHanlder = useCallback(
     (value: string) => {
-      if (!value) store.mockup.setPosition({ y: 0 });
-      store.mockup.setPosition({ y: Number(value) });
+      if (!value) store.mockup.setPosition({ y: 0 }, index);
+      store.mockup.setPosition({ y: Number(value) }, index);
     },
-    [store.mockup]
+    [store.mockup, index]
   );
+
+  if (typeof position === "undefined") return null;
 
   return (
     <>
@@ -46,9 +55,7 @@ export const Position: React.FC = observer(() => {
             id="mockup-position-x"
             isVisibleLabel={false}
             onChange={onPositionXChangeHanlder}
-            value={String(
-              Math.ceil(store.mockup.position[store.mockup.activeMockup].x)
-            )}
+            value={String(Math.ceil(position.x))}
             rightPointer="px"
             leftPointer="x"
             type="number"
@@ -63,9 +70,7 @@ export const Position: React.FC = observer(() => {
             id="mockup-position-y"
             isVisibleLabel={false}
             onChange={onPositionYChangeHanlder}
-            value={String(
-              Math.ceil(store.mockup.position[store.mockup.activeMockup].y)
-            )}
+            value={String(Math.ceil(position.y))}
             rightPointer="px"
             leftPointer="y"
             type="number"

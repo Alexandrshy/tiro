@@ -14,9 +14,8 @@ export const BlurSwitcher: React.FC = observer(() => {
   const store = useStore();
 
   const onBlurHandler = useCallback(
-    (event) => {
-      if (event.target.value)
-        store.backgroundImage.changeBlur(event.target.value);
+    (value) => {
+      store.backgroundImage.changeBlur(value);
     },
     [store.backgroundImage]
   );

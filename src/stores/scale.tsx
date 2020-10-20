@@ -8,12 +8,12 @@ export class PreviewScale {
   value: string = "35";
 
   @action
-  setScale(event: React.ChangeEvent<HTMLInputElement>) {
-    if (event.target.value) this.value = event.target.value;
+  setScale(value: string) {
+    this.value = value;
   }
 }
 
 export type PreviewScaleType = {
   value: string;
-  setScale: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  setScale: (value: string) => void;
 };

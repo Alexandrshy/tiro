@@ -41,15 +41,17 @@ export const MobileOne: React.FC<PropsType> = observer(
     useEffect(() => {
       autorun(() => {
         store.mockup.setPosition({
-          x: previewWidth / 2 - store.mockup.size.width / 2,
-          y: previewHeight / 2 - store.mockup.size.height / 2,
+          x:
+            previewWidth / 2 - store.mockup.options.mobileOne.size[0].width / 2,
+          y:
+            previewHeight / 2 -
+            store.mockup.options.mobileOne.size[0].height / 2,
         });
       });
     }, [
       previewWidth,
       previewHeight,
-      store.mockup.size.width,
-      store.mockup.size.height,
+      store.mockup.options.mobileOne.size,
       store.mockup,
     ]);
 
@@ -69,17 +71,24 @@ export const MobileOne: React.FC<PropsType> = observer(
         scale={scale}
         onDrag={onControlledDrag}
         position={{
-          x: store.mockup.position[store.mockup.activeMockup].x,
-          y: store.mockup.position[store.mockup.activeMockup].y,
+          x: store.mockup.options[store.mockup.activeMockup].position[0].x,
+          y: store.mockup.options[store.mockup.activeMockup].position[0].y,
         }}
       >
         <div
           className={style.canvas}
           style={{
-            width: `${store.mockup.size.width}px`,
-            height: `${store.mockup.size.height}px`,
+            width: `${store.mockup.options.mobileOne.size[0].width}px`,
+            height: `${store.mockup.options.mobileOne.size[0].height}px`,
           }}
-        ></div>
+        >
+          <div
+            className={style.box}
+            style={{
+              transform: `rotate(${store.mockup.options.mobileOne.rotate}deg)`,
+            }}
+          ></div>
+        </div>
       </Draggable>
     );
   }

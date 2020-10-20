@@ -30,12 +30,18 @@ export const Alignment: React.FC = observer(() => {
           break;
         case "center":
           store.mockup.setPosition({
-            x: Number(width) / 2 - store.mockup.size.width / 2,
+            x:
+              Number(width) / 2 -
+              store.mockup.options[store.mockup.activeMockup].size[0].width / 2,
           });
           break;
         case "right":
           store.mockup.setPosition({
-            x: Number(width) - Number(store.mockup.size.width),
+            x:
+              Number(width) -
+              Number(
+                store.mockup.options[store.mockup.activeMockup].size[0].width
+              ),
           });
           break;
         case "top":
@@ -43,12 +49,19 @@ export const Alignment: React.FC = observer(() => {
           break;
         case "middle":
           store.mockup.setPosition({
-            y: Number(height) / 2 - store.mockup.size.height / 2,
+            y:
+              Number(height) / 2 -
+              store.mockup.options[store.mockup.activeMockup].size[0].height /
+                2,
           });
           break;
         case "bottom":
           store.mockup.setPosition({
-            y: Number(height) - Number(store.mockup.size.height),
+            y:
+              Number(height) -
+              Number(
+                store.mockup.options[store.mockup.activeMockup].size[0].height
+              ),
           });
           break;
       }

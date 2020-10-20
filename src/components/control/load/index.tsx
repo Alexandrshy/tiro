@@ -8,6 +8,7 @@ export type PropsType = {
   isVisibleLabel?: boolean;
   className?: string;
   inputRef?: React.RefObject<HTMLInputElement>;
+  isBorder?: boolean;
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
@@ -17,6 +18,7 @@ export type PropsType = {
  * @param {boolean} props.isVisibleLabel - Is a visible label
  * @param {string} props.className - Additional className
  * @param {onChange} props.onChange - Method for handling input changes
+ * @param {boolean} props.isBorder - Border for refreshing the loading area
  */
 export const Upload: React.FC<PropsType> = ({
   id,
@@ -25,6 +27,7 @@ export const Upload: React.FC<PropsType> = ({
   onChange,
   children,
   inputRef,
+  isBorder = true,
 }) => (
   <div className={style.wrapper}>
     <input
@@ -39,6 +42,7 @@ export const Upload: React.FC<PropsType> = ({
       htmlFor={id}
       className={classNames(style.label, {
         "visually-hidden": !isVisibleLabel,
+        [style.labelBorder]: isBorder,
       })}
     >
       {children}
