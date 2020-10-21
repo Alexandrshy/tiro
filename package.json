@@ -65,7 +65,7 @@
     "eslint": "^6.6.0",
     "eslint-plugin-simple-import-sort": "^5.0.3",
     "husky": "^4.3.0",
-    "lint-staged": "^10.4.0",
+    "lint-staged": "^10.4.2",
     "normalize.css": "^8.0.1",
     "react-app-rewired": "^2.1.6",
     "ts-loader": "^8.0.4",
