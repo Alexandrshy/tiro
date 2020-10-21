@@ -2,8 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.25rem 0;
-  margin-top: 2rem;
+  padding: 3rem 0 1.5rem;
 }
 
 .list {

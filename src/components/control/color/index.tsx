@@ -23,7 +23,11 @@ export const ColorPicker: React.FC<PropsType> = ({
   value,
   onChange,
 }) => {
-  const onChangehandler = (event: React.ChangeEvent<HTMLInputElement>) =>
+  /**
+   * Handling input value changes
+   * @param {React.ChangeEvent<HTMLInputElement>} event - Processed event
+   */
+  const onChangeHandler = (event: React.ChangeEvent<HTMLInputElement>) =>
     onChange(event.target.value);
 
   return (
@@ -32,7 +36,7 @@ export const ColorPicker: React.FC<PropsType> = ({
         id={id}
         type="color"
         className={classNames(style.input, className)}
-        onChange={onChangehandler}
+        onChange={onChangeHandler}
         value={value}
       />
       <label

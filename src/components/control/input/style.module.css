@@ -22,8 +22,17 @@
   overflow: hidden;
 }
 
+.input[type="number"]::-webkit-inner-spin-button,
+.input[type="number"]::-webkit-outer-spin-button {
+  appearance: none;
+}
+
 .rightOffset {
-  padding-right: 1.25rem;
+  padding-right: 1.65rem;
+}
+
+.leftOffset {
+  padding-left: 1.65rem;
 }
 
 .input:focus {
@@ -39,11 +48,19 @@
   }
 }
 
-.rightPointer {
-  z-index: 1;
+.rightPointer,
+.leftPointer {
+  z-index: 2;
   position: absolute;
   top: 12px;
-  right: 10px;
   color: var(--gray-text);
   font-size: 0.85rem;
+}
+
+.rightPointer {
+  right: 10px;
+}
+
+.leftPointer {
+  left: 10px;
 }

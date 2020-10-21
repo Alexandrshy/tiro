@@ -4,7 +4,7 @@ import React from "react";
 import style from "./style.module.css";
 
 /**
- *
+ * Footer with personal information
  */
 export const Footer: React.FC = () => {
   return (

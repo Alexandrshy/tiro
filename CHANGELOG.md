@@ -1,3 +1,129 @@
+# [1.1.0](https://github.com/Alexandrshy/tiro/compare/v1.0.24...v1.1.0) (2020-10-20)
+
+
+### Features
+
+* changed the structure of the store for mockups ([01e6a37](https://github.com/Alexandrshy/tiro/commit/01e6a37b185a0a4e512e0cc0ebb49fbe19109aeb))
+
+## [1.0.24](https://github.com/Alexandrshy/tiro/compare/v1.0.23...v1.0.24) (2020-10-11)
+
+
+### Bug Fixes
+
+* fixed alignment ([a83b97e](https://github.com/Alexandrshy/tiro/commit/a83b97e520e00257729d2731a69b5cd38c0d9648))
+* fixed centring ([00dc61c](https://github.com/Alexandrshy/tiro/commit/00dc61c1e80e14c6728a8fdb68bff79978f68ba3))
+
+## [1.0.23](https://github.com/Alexandrshy/tiro/compare/v1.0.22...v1.0.23) (2020-10-11)
+
+
+### Bug Fixes
+
+* added mockup control panel ([59c5c8a](https://github.com/Alexandrshy/tiro/commit/59c5c8a75d87b1c7a99e1873459d6234c997228c))
+* updated inputs ([d988c9c](https://github.com/Alexandrshy/tiro/commit/d988c9cb4c51efa92c752fa3544bae081ddb9f89))
+
+## [1.0.22](https://github.com/Alexandrshy/tiro/compare/v1.0.21...v1.0.22) (2020-10-11)
+
+
+### Bug Fixes
+
+* added primary mockups ([1bff23d](https://github.com/Alexandrshy/tiro/commit/1bff23ddcab9bdcf8b5290f9c0e4c866282c6fcc))
+* added react-draggable dependency ([66a81fc](https://github.com/Alexandrshy/tiro/commit/66a81fc03bd24610fdcbc04092e792be263aa83c))
+* little refactoring to bring the general style ([0ba40b1](https://github.com/Alexandrshy/tiro/commit/0ba40b17b4cec45dc5bacb5d1b37ef7adf966bd4))
+* updated const for color ([f65e8a4](https://github.com/Alexandrshy/tiro/commit/f65e8a4d52cb93ea456a2491314390fe3c4e3296))
+
+## [1.0.21](https://github.com/Alexandrshy/tiro/compare/v1.0.20...v1.0.21) (2020-10-11)
+
+
+### Bug Fixes
+
+* added button for aligning mockups ([864f503](https://github.com/Alexandrshy/tiro/commit/864f5035c3d102459a1b8fab049dc85f96c0304b))
+* added store for working with mockup ([b9fb16c](https://github.com/Alexandrshy/tiro/commit/b9fb16c110f6cde98659658e48a40a2abae9a1a3))
+
+## [1.0.20](https://github.com/Alexandrshy/tiro/compare/v1.0.19...v1.0.20) (2020-10-05)
+
+
+### Bug Fixes
+
+* added size and positon for background ([b251182](https://github.com/Alexandrshy/tiro/commit/b251182c86b0acb372b9b8494751c92606e7a497))
+* renamed color ([9f2c2eb](https://github.com/Alexandrshy/tiro/commit/9f2c2ebe13a474f0b44a4467c409d7772bcabc9b))
+* renamed store ([cd0a586](https://github.com/Alexandrshy/tiro/commit/cd0a58650b79e666bb7ee786f5bfeb5134a3dad9))
+
+## [1.0.19](https://github.com/Alexandrshy/tiro/compare/v1.0.18...v1.0.19) (2020-10-04)
+
+
+### Bug Fixes
+
+* moved canvas component to main directory ([6aa4dd9](https://github.com/Alexandrshy/tiro/commit/6aa4dd9f7aa0e76b1937eeb6ee44e252ea727971))
+
+## [1.0.18](https://github.com/Alexandrshy/tiro/compare/v1.0.17...v1.0.18) (2020-10-04)
+
+
+### Bug Fixes
+
+* addded click hander for loading img ([f7e429f](https://github.com/Alexandrshy/tiro/commit/f7e429f74e493d378badb8125b65dbaaa962abc6))
+* added new cntrol components for work with canvas ([b56733f](https://github.com/Alexandrshy/tiro/commit/b56733fd400b93addc22103ce9701960d4433bee))
+* removed unused prop ([15d77a7](https://github.com/Alexandrshy/tiro/commit/15d77a76ff8d0109d86cf6cb83c22056c54c4736))
+
+## [1.0.17](https://github.com/Alexandrshy/tiro/compare/v1.0.16...v1.0.17) (2020-10-02)
+
+
+### Bug Fixes
+
+* added blur field ([b8c234c](https://github.com/Alexandrshy/tiro/commit/b8c234caaa7a83740c75fb9d0b2d898bd1b96f31))
+* added switch control ([813749d](https://github.com/Alexandrshy/tiro/commit/813749d566e9a11b40a0512a521556d6692eee4b))
+* fixed slider component, added theme for this component ([c3663e4](https://github.com/Alexandrshy/tiro/commit/c3663e400ffbe20275a0d1bffecfd585222e8f2a))
+* returned width ([977fe9d](https://github.com/Alexandrshy/tiro/commit/977fe9d42f761e9bd2a7613f624a3f63adce2584))
+* used switcher ([ae3940c](https://github.com/Alexandrshy/tiro/commit/ae3940cbdd9573d73366cf111b32ad9aaff5235c))
+
+## [1.0.16](https://github.com/Alexandrshy/tiro/compare/v1.0.15...v1.0.16) (2020-10-02)
+
+
+### Bug Fixes
+
+* added new icons ([f5f6188](https://github.com/Alexandrshy/tiro/commit/f5f6188fe116b569ff4bd3ce371ffe035f8c30f1))
+* added new packages ([e175893](https://github.com/Alexandrshy/tiro/commit/e17589365cc3026a97669529810e0c8517fc7c46))
+* fixed aside contol ([46fc815](https://github.com/Alexandrshy/tiro/commit/46fc8152edc2641fc6418c41ed894a0215b42877))
+* fixed const ([8b57bc5](https://github.com/Alexandrshy/tiro/commit/8b57bc5dcb4971aea3d156e5c23eb26631ec2d89))
+* fixed preview ([4ae9fb3](https://github.com/Alexandrshy/tiro/commit/4ae9fb32478d3e1bdda51a19da071c59b6519a6c))
+* fixed store ([86b2991](https://github.com/Alexandrshy/tiro/commit/86b299161a0cf0f2fb48ce160749c2f29d2a620a))
+* fixed store data ([5df7ded](https://github.com/Alexandrshy/tiro/commit/5df7dedec0d18e8b129c55fbc7f9f9b3480d1d4d))
+* fixed subtitle ([7e9595b](https://github.com/Alexandrshy/tiro/commit/7e9595b281640fdcdbc516fb16e801733e0e98da))
+* fixed upload input ([a531073](https://github.com/Alexandrshy/tiro/commit/a531073c82d145f6a359414a97738574b620119b))
+
+## [1.0.15](https://github.com/Alexandrshy/tiro/compare/v1.0.14...v1.0.15) (2020-09-27)
+
+
+### Bug Fixes
+
+* added jsdoc for footer ([62d7845](https://github.com/Alexandrshy/tiro/commit/62d78455d775432efad08625633d621e1c711bef))
+* added typescript ([ba4fbfb](https://github.com/Alexandrshy/tiro/commit/ba4fbfb5e546d511c9a8e904c06ce4b161ab9e24))
+* fixed content with new slider component ([8b558b6](https://github.com/Alexandrshy/tiro/commit/8b558b64025ad2415da8e782d57bf0870b1f3034))
+* fixed input control ([ebf24b6](https://github.com/Alexandrshy/tiro/commit/ebf24b65c534b6a0d0eefe2bebedcf077ac847be))
+* fixed select control ([fdc7693](https://github.com/Alexandrshy/tiro/commit/fdc7693ff3feca584412fe46c897b79a196e77e2))
+* fixed slider control ([79ddc08](https://github.com/Alexandrshy/tiro/commit/79ddc08f776fef78d4487d82c8fa7c75cd378fce))
+* fixed slider control ([2390413](https://github.com/Alexandrshy/tiro/commit/239041318653fa4ce55387c49c251192368b7b21))
+* fixed upload control ([0a07043](https://github.com/Alexandrshy/tiro/commit/0a07043fbe7f4d9858629fc76c44d62733e6ac9c))
+* removed unused prop and add jsdoc ([de340ad](https://github.com/Alexandrshy/tiro/commit/de340ad0bc4e5e2fdae3ba0c8f61a0c58ef9de0f))
+
+## [1.0.14](https://github.com/Alexandrshy/tiro/compare/v1.0.13...v1.0.14) (2020-09-25)
+
+
+### Bug Fixes
+
+* added footer ([e29c2b9](https://github.com/Alexandrshy/tiro/commit/e29c2b92543efc0c453d4da1aab082a730802ede))
+* added helper for conver color ([643c4dc](https://github.com/Alexandrshy/tiro/commit/643c4dc61c73ddcb9d01ed6b7ded13c0eb52b1af))
+
+## [1.0.13](https://github.com/Alexandrshy/tiro/compare/v1.0.12...v1.0.13) (2020-09-25)
+
+
+### Bug Fixes
+
+* [security] bump lodash.template from 4.4.0 to 4.5.0 ([271ff26](https://github.com/Alexandrshy/tiro/commit/271ff2610bf51856325899fd3dee6540cf4f6968))
+* [security] bump mixin-deep from 1.3.1 to 1.3.2 ([4391e79](https://github.com/Alexandrshy/tiro/commit/4391e79f2350970a3bce136c6c8094a06dfe5972))
+* [security] bump websocket-extensions from 0.1.3 to 0.1.4 ([67e89b1](https://github.com/Alexandrshy/tiro/commit/67e89b1c7a319e4b92f5897b9f0507d144e09198))
+* bump mobx from 5.15.6 to 5.15.7 ([f5ba651](https://github.com/Alexandrshy/tiro/commit/f5ba651c32a275cc4b2207fa8f730e22a35f2682))
+* bump ts-loader from 8.0.3 to 8.0.4 ([bc2e2ae](https://github.com/Alexandrshy/tiro/commit/bc2e2ae5fcff217989d34baf4a32f1d80ceed434))
+
 ## [1.0.12](https://github.com/Alexandrshy/tiro/compare/v1.0.11...v1.0.12) (2020-09-25)
 
 
