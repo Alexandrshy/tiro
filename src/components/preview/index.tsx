@@ -56,6 +56,7 @@ export const Preview: React.FC = observer(() => {
                 backgroundPosition: position,
                 backgroundSize: size,
                 filter: `blur(${blur}px)`,
+                transform: `scale(${Number(blur) * 0.002 + 1})`,
               }}
             ></div>
             <Mockup
