@@ -50,9 +50,21 @@ export const Input: React.FC<PropsType> = ({
    * @param {React.ChangeEvent<HTMLInputElement>} event - Processed event
    */
   const onChangeHandler = useCallback(
-    (event: React.ChangeEvent<HTMLInputElement>) =>
-      onChange(event.target.value),
-    [onChange]
+    (event: React.ChangeEvent<HTMLInputElement>) => {
+      let value = event.target.value;
+
+      if (type === "number") {
+        const maxValue = Number(max);
+        const minValue = Number(min);
+
+        if (Number(value) > maxValue) value = String(maxValue);
+
+        if (Number(value) < minValue) value = String(minValue);
+      }
+
+      onChange(value);
+    },
+    [max, min, onChange, type]
   );
 
   return (
