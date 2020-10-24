@@ -11,16 +11,6 @@
   transition: all 0.3s;
 }
 
-.title {
-  margin-top: 0.5em;
-  margin-bottom: 0.25rem;
-  font-size: 0.85em;
-}
-
-.subtitle {
-  font-size: 0.75rem;
-}
-
 .box {
   z-index: 1;
   position: absolute;
