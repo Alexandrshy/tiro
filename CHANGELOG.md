@@ -1,3 +1,19 @@
+## [1.1.1](https://github.com/Alexandrshy/tiro/compare/v1.1.0...v1.1.1) (2020-10-24)
+
+
+### Bug Fixes
+
+* [security] bump dot-prop from 4.2.0 to 4.2.1 ([d3ccf01](https://github.com/Alexandrshy/tiro/commit/d3ccf01bd4549eee2021340a846f49f0d473fe91))
+* [security] bump npm-user-validate from 1.0.0 to 1.0.1 ([0b80c80](https://github.com/Alexandrshy/tiro/commit/0b80c80cc42f1e5f036a4a0c7a06a00854998699))
+* bump @babel/plugin-proposal-decorators from 7.10.5 to 7.12.1 ([966b317](https://github.com/Alexandrshy/tiro/commit/966b317fd0ec4bffeee8873d99f2720015fb0e24))
+* bump @types/react from 16.9.49 to 16.9.53 ([2c64577](https://github.com/Alexandrshy/tiro/commit/2c6457718bc7702f163e9d3aff012fd58e30bef0))
+* bump eslint from 6.8.0 to 7.11.0 ([a9fa243](https://github.com/Alexandrshy/tiro/commit/a9fa24343d1d256cc3f85aaee6386228677a3691))
+* bump lint-staged from 10.4.0 to 10.4.2 ([a6c28f8](https://github.com/Alexandrshy/tiro/commit/a6c28f86c9f8559e6417ec73254f903d6d04fe8a))
+* bump mobx-react from 6.3.0 to 6.3.1 ([fc9d2a6](https://github.com/Alexandrshy/tiro/commit/fc9d2a6e951cd5b0708d36d14b3f51dfa0feee0c))
+* bump react from 16.13.1 to 16.14.0 ([61137c7](https://github.com/Alexandrshy/tiro/commit/61137c71298ea5f4b4e75f344aa3ac8bc0ff699e))
+* bump ts-loader from 8.0.4 to 8.0.5 ([d5eb807](https://github.com/Alexandrshy/tiro/commit/d5eb807a3d83acd45f7ea3c8ec7146edbc3cec8c))
+* bump ts-loader from 8.0.4 to 8.0.6 ([d83e461](https://github.com/Alexandrshy/tiro/commit/d83e461ad818a9b097bcd91186a3e70895fd5c92))
+
 # [1.1.0](https://github.com/Alexandrshy/tiro/compare/v1.0.24...v1.1.0) (2020-10-20)
 
 
