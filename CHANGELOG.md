@@ -1,3 +1,14 @@
+# [1.2.0](https://github.com/Alexandrshy/tiro/compare/v1.1.1...v1.2.0) (2020-10-24)
+
+
+### Features
+
+* added border radius control ([932cf66](https://github.com/Alexandrshy/tiro/commit/932cf66881a5dd38a8b43ebf1b8a27b6f6ef9193))
+* added control ([c08eea1](https://github.com/Alexandrshy/tiro/commit/c08eea13e1b018ac1c525816de6c1d5aafb29537))
+* added transformation when changing blur ([53ce5f9](https://github.com/Alexandrshy/tiro/commit/53ce5f918505dab28fef274bb131a0ae1f2d6f0b))
+* fixed bg control ([76aa141](https://github.com/Alexandrshy/tiro/commit/76aa141ef0f20488014e6f3c1977958c42a7576c))
+* fixed store ([f806c06](https://github.com/Alexandrshy/tiro/commit/f806c0655ad8527e0628cf28b9f17bfe6953bfcb))
+
 ## [1.1.1](https://github.com/Alexandrshy/tiro/compare/v1.1.0...v1.1.1) (2020-10-24)
 
 
