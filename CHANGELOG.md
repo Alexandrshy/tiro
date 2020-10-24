@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/Alexandrshy/tiro/compare/v1.2.0...v1.2.1) (2020-10-24)
+
+
+### Bug Fixes
+
+* fixed eslint dependencies ([bad0687](https://github.com/Alexandrshy/tiro/commit/bad068784ede97d269dd09a730d33fe93d485f32))
+
 # [1.2.0](https://github.com/Alexandrshy/tiro/compare/v1.1.1...v1.2.0) (2020-10-24)
 
 
