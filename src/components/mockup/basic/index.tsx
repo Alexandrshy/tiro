@@ -1,8 +1,7 @@
 import { observer } from "mobx-react";
-import React, { useCallback, useEffect, useRef } from "react";
+import React, { useCallback, useEffect } from "react";
 import Draggable from "react-draggable";
 
-import { Upload } from "@components/control/load";
 import { useStore } from "@stores/context";
 
 import style from "./style.module.css";
@@ -22,21 +21,6 @@ export type PropsType = {
 export const Basic: React.FC<PropsType> = observer(
   ({ scale, previewWidth, previewHeight }) => {
     const store = useStore();
-
-    const inputRef = useRef<HTMLInputElement>(null);
-
-    /**
-     * Handler for loading images
-     * @param {React.ChangeEvent<HTMLInputElement>} event - processed event
-     */
-    const onChangeHandler = useCallback(
-      (event: React.ChangeEvent<HTMLInputElement>) => {
-        if (event.target.files && event.target.files[0]) {
-          store.mockup.setFile(URL.createObjectURL(event.target.files[0]), 0);
-        }
-      },
-      [store.mockup]
-    );
 
     /**
      * Size calculation
@@ -104,18 +88,9 @@ export const Basic: React.FC<PropsType> = observer(
             style={{
               transform: `rotate(${store.mockup.options.basic.rotate}deg)`,
               backgroundImage: `url(${store.mockup.options.basic.file[0]})`,
+              borderRadius: `${store.mockup.options.basic.border}px`,
             }}
-          >
-            {/* <Upload
-              id="upload-basic-1"
-              onChange={onChangeHandler}
-              inputRef={inputRef}
-              isBorder={false}
-              className={style.uploadPreview}
-            >
-              Uploading a preview of your work
-            </Upload> */}
-          </div>
+          />
         </div>
       </Draggable>
     );

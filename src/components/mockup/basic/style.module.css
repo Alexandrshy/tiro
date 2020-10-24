@@ -8,12 +8,9 @@
   width: 100%;
   height: 100%;
   background-color: var(--mine-shaft);
+  background-position: center center;
+  background-size: cover;
   box-shadow: 15px 25px 45px -13px rgba(0, 0, 0, 0.45);
-  border-radius: 15px;
   cursor: all-scroll;
   overflow: hidden;
-}
-
-.uploadPreview ~ label {
-  opacity: 0;
 }

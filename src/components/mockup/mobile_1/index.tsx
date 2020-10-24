@@ -86,6 +86,8 @@ export const MobileOne: React.FC<PropsType> = observer(
             className={style.box}
             style={{
               transform: `rotate(${store.mockup.options.mobileOne.rotate}deg)`,
+              backgroundImage: `url(${store.mockup.options.mobileOne.file[0]})`,
+              borderRadius: `${store.mockup.options.mobileOne.border}px`,
             }}
           ></div>
         </div>

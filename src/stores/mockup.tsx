@@ -7,6 +7,7 @@ export type OptionsType = {
     position: { x: number; y: number }[];
     file: string[] | null[];
     rotate: number[];
+    border: number[];
   };
 };
 
@@ -21,12 +22,14 @@ export class Mockup {
       position: [{ x: 0, y: 0 }],
       file: [null],
       rotate: [0],
+      border: [15],
     },
     mobileOne: {
       size: [{ width: 0, height: 0 }],
       position: [{ x: 0, y: 0 }],
       file: [null],
       rotate: [0],
+      border: [15],
     },
   };
 
@@ -62,8 +65,22 @@ export class Mockup {
   }
 
   @action
-  setFile(file: string, index: number) {
-    if (file) this.options[this.activeMockup].file[index] = file;
+  setBorder(value: number, index?: number) {
+    this.options[this.activeMockup].border[index || 0] = value;
+  }
+
+  @action
+  setFile(event: React.ChangeEvent<HTMLInputElement>, index: number) {
+    if (event.target.files && event.target.files[0]) {
+      this.options[this.activeMockup].file[index] = URL.createObjectURL(
+        event.target.files[0]
+      );
+    }
+  }
+
+  @action
+  removeFile(index: number) {
+    this.options[this.activeMockup].file[index] = null;
   }
 
   @computed
@@ -79,6 +96,8 @@ export type MockupType = {
   setSize: (value: { width?: number; height?: number }, index?: number) => void;
   setActiveMockup: (value: MockupOptionsType) => void;
   setRotate: (value: number, index?: number) => void;
-  setFile: (file: string, index: number) => void;
+  setBorder: (value: number, index?: number) => void;
+  setFile: (event: React.ChangeEvent<HTMLInputElement>, index: number) => void;
+  removeFile: (index: number) => void;
   length: number;
 };
