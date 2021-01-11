@@ -51,7 +51,7 @@
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-draggable": "^4.4.3",
-    "react-scripts": "4.0.0"
+    "react-scripts": "4.0.1"
   },
   "devDependencies": {
     "@babel/plugin-proposal-decorators": "^7.12.1",
