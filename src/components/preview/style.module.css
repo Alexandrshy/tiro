@@ -1,9 +1,7 @@
 .wrapper {
   position: relative;
-  margin: 1rem;
   overflow: auto;
   flex: 1 1 0%;
-  background-color: var(--black-squeeze);
 }
 
 .box {
