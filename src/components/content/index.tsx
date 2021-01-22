@@ -22,7 +22,7 @@ export const Content: React.FC = observer(() => {
   return (
     <div className={style.wrapper}>
       <Aside />
-      <main className={style.mian}>
+      <main className={style.main}>
         <Preview />
         <div className={style.sliderWrapper}>
           <Slider

@@ -10,13 +10,13 @@
   padding-top: 90px;
 }
 
-.mian {
+.main {
   position: relative;
   flex: 1 1 0%;
   display: flex;
   overflow: hidden;
   flex-direction: column;
-  width: calc(100% - 350px);
+  width: 80%;
   min-height: calc(100vh - 90px);
   padding: 2rem;
   background-color: var(--white);
