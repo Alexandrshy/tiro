@@ -1,3 +1,26 @@
+.aside {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  max-width: 450px;
+  min-width: 350px;
+  padding-top: 90px;
+}
+
+.wrapper {
+  padding: 2rem 2rem 0;
+  overflow: hidden auto;
+}
+
 .item:not(:last-child) {
   margin-bottom: 3rem;
+}
+
+.buttonWrapper {
+  width: 100%;
+  padding: 1.25rem 2rem;
+}
+
+.buttonWrapper button {
+  width: 100%;
 }

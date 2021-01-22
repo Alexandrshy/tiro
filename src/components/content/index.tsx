@@ -31,6 +31,7 @@ export const Content: React.FC = observer(() => {
             min={10}
             value={store.previewScale.value}
             onChange={onChangehandler}
+            theme="light"
           >
             Changing the scale of the preview
           </Slider>

@@ -1,4 +1,6 @@
 .wrapper {
+  position: relative;
+  z-index: 10;
   display: flex;
   flex: 1 1 0%;
   width: 100%;
@@ -7,7 +9,6 @@
   justify-content: center;
   align-items: stretch;
   user-select: none;
-  padding-top: 90px;
 }
 
 .main {
@@ -18,9 +19,7 @@
   flex-direction: column;
   width: 80%;
   min-height: calc(100vh - 90px);
-  padding: 2rem;
-  background-color: var(--white);
-  border-radius: 50px 0 0 0;
+  background-color: var(--charade);
 }
 
 .sliderWrapper {

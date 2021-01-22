@@ -80,7 +80,6 @@ export const MockupsItem: React.FC<PropsType> = observer(({ className }) => {
               type="button"
               onClick={chooseMockup(key as MockupOptionsType)}
             ></button>
-            <span className={style.name}>{key}</span>
           </li>
         ))}
       </ul>
