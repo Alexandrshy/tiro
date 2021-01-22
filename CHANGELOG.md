@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/Alexandrshy/tiro/compare/v1.2.1...v1.3.0) (2021-01-22)
+
+
+### Features
+
+* added recommended colors and made minor changes ([43a0f2a](https://github.com/Alexandrshy/tiro/commit/43a0f2a720fd44e9f97de570087cb60c209072de))
+
 ## [1.2.1](https://github.com/Alexandrshy/tiro/compare/v1.2.0...v1.2.1) (2020-10-24)
 
 
