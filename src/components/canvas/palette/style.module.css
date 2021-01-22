@@ -1,0 +1,32 @@
+.wrapper {
+  margin-top: 0.75rem;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -5px;
+}
+
+.item {
+  margin: 5px;
+}
+
+.button {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.125rem var(--bg-button-white-focus);
+}
+
+@media (hover: hover) {
+  .button:hover {
+    outline: none;
+    box-shadow: 0 0 0 0.125rem var(--bg-button-white-focus);
+  }
+}

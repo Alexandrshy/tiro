@@ -6,6 +6,7 @@ import style from "./style.module.css";
 export type PropsType = {
   id: string;
   isVisibleLabel?: boolean;
+  isDisabled?: boolean;
   className?: string;
   value?: string;
   type?: "text" | "number";
@@ -34,6 +35,7 @@ export type PropsType = {
 export const Input: React.FC<PropsType> = ({
   id,
   isVisibleLabel = true,
+  isDisabled = false,
   className,
   value,
   type = "text",
@@ -94,6 +96,7 @@ export const Input: React.FC<PropsType> = ({
         value={value}
         min={min}
         max={max}
+        disabled={isDisabled}
       />
       {rightPointer && (
         <span className={style.rightPointer}>{rightPointer}</span>

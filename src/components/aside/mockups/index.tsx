@@ -3,6 +3,8 @@ import { observer } from "mobx-react";
 import React, { useCallback } from "react";
 
 import { Alignment } from "@components/aside/mockups/alignment";
+import { BorderRadius } from "@components/aside/mockups/border";
+import { File } from "@components/aside/mockups/file";
 import { Position } from "@components/aside/mockups/position";
 import { Rotate } from "@components/aside/mockups/rotate";
 import { Size } from "@components/aside/mockups/size";
@@ -33,6 +35,14 @@ export const MockupsItem: React.FC<PropsType> = observer(({ className }) => {
     {
       title: "rotate",
       component: Rotate,
+    },
+    {
+      title: "border",
+      component: BorderRadius,
+    },
+    {
+      title: "file",
+      component: File,
     },
   ];
   const store = useStore();
@@ -78,7 +88,12 @@ export const MockupsItem: React.FC<PropsType> = observer(({ className }) => {
       {sizeList.map((_, index) => (
         <ul className={style.listControl} key={`control-${index}`}>
           {CONTROL.map(({ title, component: Component }) => (
-            <li className={style.itemControl} key={title}>
+            <li
+              className={classNames(style.itemControl, {
+                [style.itemFileControl]: title === "file",
+              })}
+              key={title}
+            >
               <Component index={index} />
             </li>
           ))}

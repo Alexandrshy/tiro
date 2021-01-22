@@ -2,6 +2,7 @@ import React from "react";
 
 import { Canvas as CanvasControl } from "@components/canvas/canvas";
 import { InputColor } from "@components/canvas/color";
+import { Palette } from "@components/canvas/palette";
 import { InputSize } from "@components/canvas/size";
 import { List } from "@components/control/list";
 
@@ -16,6 +17,7 @@ export const Canvas: React.FC = () => {
       component: InputSize,
     },
     { name: "color", component: InputColor },
+    { name: "palette", component: Palette },
   ];
 
   return (

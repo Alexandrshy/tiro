@@ -70,6 +70,7 @@ export const InputColor: React.FC = observer(() => {
             onBlur={onValidateHandler}
             className={style.inputColor}
             value={store.previewColor.value}
+            isDisabled
           >
             Color
           </Input>

@@ -87,6 +87,11 @@ export class Mockup {
   get length(): number {
     return this.options[this.activeMockup].size.length;
   }
+
+  @computed
+  get files(): string[] | null[] {
+    return this.options[this.activeMockup].file;
+  }
 }
 
 export type MockupType = {
@@ -100,4 +105,5 @@ export type MockupType = {
   setFile: (event: React.ChangeEvent<HTMLInputElement>, index: number) => void;
   removeFile: (index: number) => void;
   length: number;
+  files: string[] | null[];
 };

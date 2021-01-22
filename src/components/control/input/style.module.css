@@ -41,8 +41,13 @@
   box-shadow: 0 0 0 0.125rem var(--bg-button-white-focus);
 }
 
+.input:disabled {
+  color: var(--gray-text);
+  pointer-events: none;
+}
+
 @media (hover: hover) {
-  .input:hover {
+  .input:not(:disabled):hover {
     border-color: var(--border-gray);
     background-color: var(--shark);
   }

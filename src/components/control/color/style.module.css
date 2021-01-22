@@ -14,6 +14,7 @@
   font-size: 0;
   background-color: var(--mine-shaft);
   border-radius: 5px 0 0 5px;
+  cursor: pointer;
 }
 
 .input {
