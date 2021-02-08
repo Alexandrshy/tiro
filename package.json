@@ -63,7 +63,7 @@
     "@semantic-release/npm": "^7.0.9",
     "@semantic-release/release-notes-generator": "^9.0.1",
     "@types/classnames": "^2.2.11",
-    "@types/react": "^17.0.0",
+    "@types/react": "^17.0.1",
     "@types/react-dom": "^17.0.0",
     "autoprefixer": "^9.8.6",
     "customize-cra": "^1.0.0",
