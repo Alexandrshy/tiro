@@ -33,7 +33,7 @@ export const BlurSwitcher: React.FC = observer(() => {
           onChange={onBlurHandler}
           theme="light"
         >
-          Changing the scale of the preview
+          Change the blur of an image
         </Slider>
       </div>
     </div>

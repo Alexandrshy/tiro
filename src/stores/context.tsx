@@ -4,6 +4,7 @@ import React, { createContext, FC, useContext } from "react";
 import { PreviewCanvas, PreviewCanvasType } from "@stores/canvas";
 import { PreviewColor, PreviewColorType } from "@stores/color";
 import { Mockup, MockupType } from "@stores/mockup";
+import { Navigation, NavigationType } from "@stores/navigation";
 import { BackgroundImage, BackgroundImageType } from "@stores/preview";
 import { PreviewScale, PreviewScaleType } from "@stores/scale";
 import { PreviewSize, PreviewSizeType } from "@stores/size";
@@ -18,6 +19,7 @@ const StoreContext = createContext<{
   previewSize: PreviewSizeType;
   previewCanvas: PreviewCanvasType;
   mockup: MockupType;
+  navigation: NavigationType;
 } | null>(null);
 
 /**
@@ -32,6 +34,7 @@ export const StoreProvider: FC = ({ children }) => {
     previewSize: new PreviewSize(),
     previewCanvas: new PreviewCanvas(),
     mockup: new Mockup(),
+    navigation: new Navigation(),
   }));
 
   return (

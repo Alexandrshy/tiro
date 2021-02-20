@@ -1,8 +1,10 @@
+import classNames from "classnames";
 import { observer } from "mobx-react";
 import React, { useCallback } from "react";
 
 import { Aside } from "@components/aside";
 import { Slider } from "@components/control/slider";
+import { GitHubLink } from "@components/githubLink";
 import { Preview } from "@components/preview";
 import { useStore } from "@stores/context";
 
@@ -20,11 +22,19 @@ export const Content: React.FC = observer(() => {
   );
 
   return (
-    <div className={style.wrapper}>
+    <div
+      className={classNames(style.wrapper, {
+        [style.blackout]:
+          store.navigation.isFilterOpen || store.navigation.isMenuOpen,
+      })}
+    >
       <Aside />
       <main className={style.main}>
         <Preview />
         <div className={style.sliderWrapper}>
+          <div className={style.githubLink}>
+            <GitHubLink />
+          </div>
           <Slider
             id="scale-slider"
             isVisibleLabel={false}

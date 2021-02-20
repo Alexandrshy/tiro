@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import domtoimage from "dom-to-image";
 import { saveAs } from "file-saver";
 import { observer } from "mobx-react";
@@ -47,7 +48,11 @@ export const Aside: React.FC = observer(() => {
   ];
 
   return (
-    <aside className={style.aside}>
+    <aside
+      className={classNames(style.aside, {
+        [style.isActive]: store.navigation.isFilterOpen,
+      })}
+    >
       <div className={style.wrapper}>
         <ul className={style.list}>
           {ITEMS.map(({ name, component: Item }) => (
