@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/Alexandrshy/tiro/compare/v1.4.1...v1.4.2) (2021-02-20)
+
+
+### Bug Fixes
+
+* fixed style ([1da4420](https://github.com/Alexandrshy/tiro/commit/1da4420a5caf46ffa81835a7e151c628150b3e49))
+
 ## [1.4.1](https://github.com/Alexandrshy/tiro/compare/v1.4.0...v1.4.1) (2021-02-20)
 
 
