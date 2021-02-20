@@ -22,6 +22,7 @@
   flex-direction: column;
   width: 45px;
   height: 100%;
+  background-color: var(--mine-shaft);
   border-left: 1px dashed var(--border-gray);
 }
 
