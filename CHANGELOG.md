@@ -1,3 +1,16 @@
+# [1.4.0](https://github.com/Alexandrshy/tiro/compare/v1.3.0...v1.4.0) (2021-01-22)
+
+
+### Bug Fixes
+
+* fixed the typo and changed the width ([bdf4ce8](https://github.com/Alexandrshy/tiro/commit/bdf4ce8ec1757d2cf35953aa85eb2589a0f0de2d))
+
+
+### Features
+
+* redesign ([c9a30f6](https://github.com/Alexandrshy/tiro/commit/c9a30f65c5d93680ef2e015554fcd9febdef2e9e))
+* redesign ([482933c](https://github.com/Alexandrshy/tiro/commit/482933c2d28fe091d15cd1432ceda7fe32db28a5))
+
 # [1.3.0](https://github.com/Alexandrshy/tiro/compare/v1.2.1...v1.3.0) (2021-01-22)
 
 
