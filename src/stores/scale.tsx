@@ -5,7 +5,7 @@ import { action, observable } from "mobx";
  */
 export class PreviewScale {
   @observable
-  value: string = "35";
+  value: string = window.screen.width > 625 ? "35" : "20";
 
   @action
   setScale(value: string) {
