@@ -22,14 +22,14 @@ export class Mockup {
       position: [{ x: 0, y: 0 }],
       file: [null],
       rotate: [0],
-      border: [15],
+      border: [45],
     },
     mobileOne: {
       size: [{ width: 0, height: 0 }],
       position: [{ x: 0, y: 0 }],
       file: [null],
       rotate: [0],
-      border: [15],
+      border: [45],
     },
   };
 
