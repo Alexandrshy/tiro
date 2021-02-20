@@ -1,0 +1,35 @@
+.link {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 54px;
+  max-width: 350px;
+  padding: 15px;
+  background-color: #d6bd1b;
+  border-radius: 5px;
+  text-align: left;
+  transition: background-color 0.3s;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 15px;
+}
+
+.text {
+  width: calc(100% - 53px);
+  font-size: 14px;
+  color: var(--woodsmoke);
+}
+
+.link:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.125rem rgba(254, 221, 2, 0.25);
+}
+
+@media (hover: hover) {
+  .link:hover {
+    background-color: #fedd02;
+  }
+}
