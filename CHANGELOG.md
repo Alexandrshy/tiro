@@ -1,3 +1,15 @@
+## [1.4.1](https://github.com/Alexandrshy/tiro/compare/v1.4.0...v1.4.1) (2021-02-20)
+
+
+### Bug Fixes
+
+* adaptation for mobile version ([0b8d530](https://github.com/Alexandrshy/tiro/commit/0b8d530b5c3f6cfa1b45803ba6cd94a428fbf153))
+* added new icons ([9705ee1](https://github.com/Alexandrshy/tiro/commit/9705ee17d460835bfa174e24d0661fb9cd3e4734))
+* fixed border-radius ([1b9b9db](https://github.com/Alexandrshy/tiro/commit/1b9b9db90e8c52beabe3ff92f28ae3a68f5c9da8))
+* fixed CHANGELOG ([6c57adf](https://github.com/Alexandrshy/tiro/commit/6c57adf86cb1aa8108ce1531c3b93e30b911e3a4))
+* fixed footer ([8aaa8e3](https://github.com/Alexandrshy/tiro/commit/8aaa8e3dc8b073d45dcceafcbc0058959238db61))
+* fixed scale value ([5905f0a](https://github.com/Alexandrshy/tiro/commit/5905f0a16ec16089ecf5bc9aff3191a147835a66))
+
 # [1.4.0](https://github.com/Alexandrshy/tiro/compare/v1.3.0...v1.4.0) (2021-01-22)
 
 
